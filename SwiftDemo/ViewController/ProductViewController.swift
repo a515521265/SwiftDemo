@@ -15,8 +15,8 @@ class ProductViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        scrollerView.alwaysBounceHorizontal = true;
+        
+//        scrollerView.alwaysBounceHorizontal = true;
         scrollerView.alwaysBounceVertical = true;
         
         self.view.addSubview(scrollerView);
