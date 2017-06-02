@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5E20A1361EE145890035AC56 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E20A1351EE145890035AC56 /* ProductViewController.swift */; };
+		5E20A1381EE15E1F0035AC56 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E20A1371EE15E1F0035AC56 /* UIViewExtension.swift */; };
 		5E2AC69A1EE0FFDB00E0B0CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2AC6991EE0FFDB00E0B0CC /* AppDelegate.swift */; };
 		5E2AC69C1EE0FFDB00E0B0CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2AC69B1EE0FFDB00E0B0CC /* ViewController.swift */; };
 		5E2AC69F1EE0FFDB00E0B0CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E2AC69D1EE0FFDB00E0B0CC /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		5E20A1351EE145890035AC56 /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		5E20A1371EE15E1F0035AC56 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		5E2AC6961EE0FFDB00E0B0CC /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E2AC6991EE0FFDB00E0B0CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		5E2AC69B1EE0FFDB00E0B0CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = SwiftDemo/ViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				5E2AC6BC1EE135B200E0B0CC /* JWMacro.swift */,
+				5E20A1371EE15E1F0035AC56 /* UIViewExtension.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				5E2AC69C1EE0FFDB00E0B0CC /* ViewController.swift in Sources */,
 				5E2AC69A1EE0FFDB00E0B0CC /* AppDelegate.swift in Sources */,
 				5E2AC6B01EE1020500E0B0CC /* MainNavViewController.swift in Sources */,
+				5E20A1381EE15E1F0035AC56 /* UIViewExtension.swift in Sources */,
 				5E20A1361EE145890035AC56 /* ProductViewController.swift in Sources */,
 				5E2AC6BA1EE134CA00E0B0CC /* HomeViewController.swift in Sources */,
 			);

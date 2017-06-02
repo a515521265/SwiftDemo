@@ -10,8 +10,12 @@ import UIKit
 
 class ProductViewController: BaseViewController {
 
-    let scrollerView = UIScrollView.init(frame: CGRect.init(x: 0, y: 0, width: kScreenWidth, height: kScreenHeight));
     
+    let scrollerView = {
+    
+        return UIScrollView.init(frame: CGRect.init(x: 0, y: 0, width: kScreenWidth, height: kScreenHeight));
+        
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +30,7 @@ class ProductViewController: BaseViewController {
         lab.text = "label"
         lab.textAlignment = NSTextAlignment.center;
         scrollerView.addSubview(lab);
+        
         
 
         
