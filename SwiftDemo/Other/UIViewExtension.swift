@@ -10,6 +10,8 @@ import Foundation
 import UIKit
 
 
+
+
 extension UIButton {
     
     
@@ -27,7 +29,14 @@ extension UIButton {
 
 
 
+
 extension UIView {
+    
+//    typealias singleTapEvent1 = (Void) -> Void
+//    
+//    public var singleTapEvent = singleTapEvent1()
+    
+    
     
     // x
     var x : CGFloat {
@@ -198,4 +207,32 @@ extension UIView {
             return CGPoint(x: middleX, y: middleY)
         }
     }
+    
+    
+    public func addSingleTapEvent(_: ()->Void)  {
+        
+        self.isUserInteractionEnabled = true
+        let tap = UITapGestureRecognizer.init(target: self, action: #selector(singleTapAction))
+        tap.numberOfTapsRequired=1
+        tap.numberOfTouchesRequired = 1
+        self.addGestureRecognizer(tap)
+        
+    }
+    
+    
+    
+    func singleTapAction() {
+
+//        if singleTapEvent != nil {
+//                
+//            singleTapEvent!()
+//           
+//        }
+
+
+    }
+
+    
+    
+    
 }

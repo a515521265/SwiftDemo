@@ -19,6 +19,7 @@
 		5E2AC6B21EE133CD00E0B0CC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2AC6B11EE133CD00E0B0CC /* BaseViewController.swift */; };
 		5E2AC6BA1EE134CA00E0B0CC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2AC6B91EE134CA00E0B0CC /* HomeViewController.swift */; };
 		5E2AC6BD1EE135B200E0B0CC /* JWMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2AC6BC1EE135B200E0B0CC /* JWMacro.swift */; };
+		5E37A6A81EE52B08007148C5 /* JWScrollviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E37A6A71EE52B08007148C5 /* JWScrollviewCell.swift */; };
 		5E9EB1D41EE4F0AD0042DDB0 /* JWScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9EB1D31EE4F0AD0042DDB0 /* JWScrollView.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		5E2AC6B11EE133CD00E0B0CC /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = SwiftDemo/BaseViewController.swift; sourceTree = SOURCE_ROOT; };
 		5E2AC6B91EE134CA00E0B0CC /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5E2AC6BC1EE135B200E0B0CC /* JWMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWMacro.swift; sourceTree = "<group>"; };
+		5E37A6A71EE52B08007148C5 /* JWScrollviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWScrollviewCell.swift; sourceTree = "<group>"; };
 		5E9EB1D31EE4F0AD0042DDB0 /* JWScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,6 +126,7 @@
 				5E2AC6BC1EE135B200E0B0CC /* JWMacro.swift */,
 				5E20A1371EE15E1F0035AC56 /* UIViewExtension.swift */,
 				5E9EB1D31EE4F0AD0042DDB0 /* JWScrollView.swift */,
+				5E37A6A71EE52B08007148C5 /* JWScrollviewCell.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 				5E2AC69A1EE0FFDB00E0B0CC /* AppDelegate.swift in Sources */,
 				5E2AC6B01EE1020500E0B0CC /* MainNavViewController.swift in Sources */,
 				5E20A1381EE15E1F0035AC56 /* UIViewExtension.swift in Sources */,
+				5E37A6A81EE52B08007148C5 /* JWScrollviewCell.swift in Sources */,
 				5E20A1361EE145890035AC56 /* ProductViewController.swift in Sources */,
 				5E2AC6BA1EE134CA00E0B0CC /* HomeViewController.swift in Sources */,
 			);

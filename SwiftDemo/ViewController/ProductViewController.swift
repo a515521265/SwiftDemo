@@ -30,6 +30,14 @@ class ProductViewController: BaseViewController {
         self.view.addSubview(scrollerView);
         
         
+        let cell1 = JWScrollviewCell.init(frame: CGRect.init(x: 0, y: 0, width: kScreenWidth, height: 80))
+        cell1.leftLabel().text = "账号"
+        cell1.rightTextField().placeholder = "请输入您的账号"
+        cell1.setLineColor(lineColor: UIColor.gray)
+        cell1.isGestureEnabled = true
+        cell1.setUPandDownSpacing(upSpacing: 5, downSpacing: 5)
+        
+        
         let lab1 = UILabel.init(frame: CGRect.init(x: 0, y: 0, width: kScreenWidth, height: 90));
         lab1.text = "label1"
         lab1.textAlignment = NSTextAlignment.center;
@@ -46,7 +54,7 @@ class ProductViewController: BaseViewController {
         lab3.textAlignment = NSTextAlignment.center;
         lab3.backgroundColor = UIColor.red
         
-        self.scrollerView.setScrollerviewSubViewsArr(views: [lab1,lab2,lab3])
+        self.scrollerView.setScrollerviewSubViewsArr(views: [lab1,lab2,lab3,cell1])
         
 
         self.scrollerView.tapSelectRow = {(row) in
