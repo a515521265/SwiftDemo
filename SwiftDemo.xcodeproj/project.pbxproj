@@ -19,6 +19,7 @@
 		5E2AC6B21EE133CD00E0B0CC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2AC6B11EE133CD00E0B0CC /* BaseViewController.swift */; };
 		5E2AC6BA1EE134CA00E0B0CC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2AC6B91EE134CA00E0B0CC /* HomeViewController.swift */; };
 		5E2AC6BD1EE135B200E0B0CC /* JWMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2AC6BC1EE135B200E0B0CC /* JWMacro.swift */; };
+		5E9EB1D41EE4F0AD0042DDB0 /* JWScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9EB1D31EE4F0AD0042DDB0 /* JWScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		5E2AC6B11EE133CD00E0B0CC /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = SwiftDemo/BaseViewController.swift; sourceTree = SOURCE_ROOT; };
 		5E2AC6B91EE134CA00E0B0CC /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5E2AC6BC1EE135B200E0B0CC /* JWMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWMacro.swift; sourceTree = "<group>"; };
+		5E9EB1D31EE4F0AD0042DDB0 /* JWScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 			children = (
 				5E2AC6BC1EE135B200E0B0CC /* JWMacro.swift */,
 				5E20A1371EE15E1F0035AC56 /* UIViewExtension.swift */,
+				5E9EB1D31EE4F0AD0042DDB0 /* JWScrollView.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 			files = (
 				5E2AC6B21EE133CD00E0B0CC /* BaseViewController.swift in Sources */,
 				5E2AC6AE1EE1008700E0B0CC /* MainTabBarViewController.swift in Sources */,
+				5E9EB1D41EE4F0AD0042DDB0 /* JWScrollView.swift in Sources */,
 				5E2AC6BD1EE135B200E0B0CC /* JWMacro.swift in Sources */,
 				5E2AC69C1EE0FFDB00E0B0CC /* ViewController.swift in Sources */,
 				5E2AC69A1EE0FFDB00E0B0CC /* AppDelegate.swift in Sources */,
