@@ -42,8 +42,8 @@ class MainTabBarViewController: UITabBarController {
         let textAttrs2 = NSMutableDictionary()
         textAttrs2[NSForegroundColorAttributeName] = UIColor.gray
         
-        nav.tabBarItem.setTitleTextAttributes(textAttrs2 as? [String : Any], for: UIControlState(rawValue: 0))
-        nav.tabBarItem.setTitleTextAttributes(textAttrs1 as? [String : Any], for: UIControlState(rawValue: 3))
+        nav.tabBarItem.setTitleTextAttributes(textAttrs2 as? [String : Any], for: UIControlState.normal)
+        nav.tabBarItem.setTitleTextAttributes(textAttrs1 as? [String : Any], for: UIControlState.selected)
         
         
     }

@@ -35,6 +35,7 @@ class ProductViewController: BaseViewController {
         lab1.textAlignment = NSTextAlignment.center;
         lab1.backgroundColor = UIColor.red
         
+        
         let lab2 = UILabel.init(frame: CGRect.init(x: 0, y: 0, width: kScreenWidth, height: 130));
         lab2.text = "label2"
         lab2.textAlignment = NSTextAlignment.center;
@@ -47,15 +48,15 @@ class ProductViewController: BaseViewController {
         
         self.scrollerView.setScrollerviewSubViewsArr(views: [lab1,lab2,lab3])
         
-//        self.scrollerView.resultBlock = func (index :NSInteger){
-//        
-//        }
-        
+
+        self.scrollerView.tapSelectRow = {(row) in
+            
+            print(row);
+        }
 
         
-    
+        
+        
     }
     
-
-
 }

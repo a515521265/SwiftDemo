@@ -8,10 +8,17 @@
 
 import UIKit
 
+//定义block
+typealias tapSelectRow = (NSInteger) -> ()
+
+
+
 class JWScrollView: UIScrollView {
 
+    
+    
     //定义block
-    typealias tapSelectRow = (NSInteger) -> ()
+//    typealias tapSelectRow = (NSInteger) -> ()
     
     public var allSubviews = Array<UIView>()
     
@@ -19,7 +26,7 @@ class JWScrollView: UIScrollView {
     
     public var isGestureEnabled = Bool()
     //block变量
-    public var resultBlock : tapSelectRow?
+    public var tapSelectRow : tapSelectRow?
 
     private var maxWidth = CGFloat()
     
@@ -49,6 +56,7 @@ class JWScrollView: UIScrollView {
         
         if self.isGestureEnabled {
             
+            firstView?.isUserInteractionEnabled = true
             let firstTap = UITapGestureRecognizer.init(target: self, action: #selector(viewTapAction))
             firstTap.numberOfTapsRequired=1
             firstTap.numberOfTouchesRequired = 1
@@ -67,6 +75,7 @@ class JWScrollView: UIScrollView {
             view.tag = 1992 + item
             view.x = (kScreenWidth - view.width)/2
             if self.isGestureEnabled {
+                Vieww.isUserInteractionEnabled = true
                 let tap = UITapGestureRecognizer.init(target: self, action: #selector(viewTapAction))
                 tap.numberOfTapsRequired=1
                 tap.numberOfTouchesRequired = 1
@@ -88,7 +97,9 @@ class JWScrollView: UIScrollView {
     
     func viewTapAction (tap:UITapGestureRecognizer)  {
         
-        self.resultBlock!((tap.view?.tag)!-1992)
+        if tapSelectRow != nil {
+            tapSelectRow!((tap.view?.tag)!-1992)
+        }
         
     }
     
