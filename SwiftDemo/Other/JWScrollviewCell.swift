@@ -63,6 +63,8 @@ class JWScrollviewCell: UIView {
         
         let rightTextField = UITextField.init(frame: CGRect.init(x: kScreenWidth/2, y: 0, width: kScreenWidth/2-20, height: self.contentView.height))
         
+        rightTextField.textAlignment = NSTextAlignment.right
+        
         self.contentView.addSubview(rightTextField)
         
         return rightTextField
