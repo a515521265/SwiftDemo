@@ -9,13 +9,10 @@
 /* Begin PBXBuildFile section */
 		5E20A1361EE145890035AC56 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E20A1351EE145890035AC56 /* ProductViewController.swift */; };
 		5E20A1381EE15E1F0035AC56 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E20A1371EE15E1F0035AC56 /* UIViewExtension.swift */; };
-		5E2AC69A1EE0FFDB00E0B0CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2AC6991EE0FFDB00E0B0CC /* AppDelegate.swift */; };
 		5E2AC69C1EE0FFDB00E0B0CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2AC69B1EE0FFDB00E0B0CC /* ViewController.swift */; };
 		5E2AC69F1EE0FFDB00E0B0CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E2AC69D1EE0FFDB00E0B0CC /* Main.storyboard */; };
 		5E2AC6A11EE0FFDB00E0B0CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E2AC6A01EE0FFDB00E0B0CC /* Assets.xcassets */; };
 		5E2AC6A41EE0FFDB00E0B0CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E2AC6A21EE0FFDB00E0B0CC /* LaunchScreen.storyboard */; };
-		5E2AC6AE1EE1008700E0B0CC /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2AC6AD1EE1008700E0B0CC /* MainTabBarViewController.swift */; };
-		5E2AC6B01EE1020500E0B0CC /* MainNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2AC6AF1EE1020500E0B0CC /* MainNavViewController.swift */; };
 		5E2AC6B21EE133CD00E0B0CC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2AC6B11EE133CD00E0B0CC /* BaseViewController.swift */; };
 		5E2AC6BA1EE134CA00E0B0CC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2AC6B91EE134CA00E0B0CC /* HomeViewController.swift */; };
 		5E2AC6BD1EE135B200E0B0CC /* JWMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2AC6BC1EE135B200E0B0CC /* JWMacro.swift */; };
@@ -24,6 +21,9 @@
 		5E37A6B01EE6846B007148C5 /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E37A6AF1EE6846B007148C5 /* FindViewController.swift */; };
 		5E37A6B21EE684F0007148C5 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E37A6B11EE684F0007148C5 /* CustomTableViewCell.swift */; };
 		5E37A6B41EE68532007148C5 /* CustomCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E37A6B31EE68532007148C5 /* CustomCellModel.swift */; };
+		5E37A6B81EE6A771007148C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E37A6B71EE6A771007148C5 /* AppDelegate.swift */; };
+		5E37A6BA1EE6A787007148C5 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E37A6B91EE6A787007148C5 /* MainTabBarViewController.swift */; };
+		5E37A6BC1EE6A795007148C5 /* MainNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E37A6BB1EE6A795007148C5 /* MainNavViewController.swift */; };
 		5E9EB1D41EE4F0AD0042DDB0 /* JWScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9EB1D31EE4F0AD0042DDB0 /* JWScrollView.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,14 +31,11 @@
 		5E20A1351EE145890035AC56 /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		5E20A1371EE15E1F0035AC56 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		5E2AC6961EE0FFDB00E0B0CC /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E2AC6991EE0FFDB00E0B0CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		5E2AC69B1EE0FFDB00E0B0CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = SwiftDemo/ViewController.swift; sourceTree = SOURCE_ROOT; };
 		5E2AC69E1EE0FFDB00E0B0CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5E2AC6A01EE0FFDB00E0B0CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E2AC6A31EE0FFDB00E0B0CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E2AC6A51EE0FFDB00E0B0CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5E2AC6AD1EE1008700E0B0CC /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTabBarViewController.swift; path = ../MainTabBarViewController.swift; sourceTree = "<group>"; };
-		5E2AC6AF1EE1020500E0B0CC /* MainNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainNavViewController.swift; path = ../MainNavViewController.swift; sourceTree = "<group>"; };
 		5E2AC6B11EE133CD00E0B0CC /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = SwiftDemo/BaseViewController.swift; sourceTree = SOURCE_ROOT; };
 		5E2AC6B91EE134CA00E0B0CC /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5E2AC6BC1EE135B200E0B0CC /* JWMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWMacro.swift; sourceTree = "<group>"; };
@@ -47,6 +44,9 @@
 		5E37A6AF1EE6846B007148C5 /* FindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
 		5E37A6B11EE684F0007148C5 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		5E37A6B31EE68532007148C5 /* CustomCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCellModel.swift; sourceTree = "<group>"; };
+		5E37A6B71EE6A771007148C5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = SwiftDemo/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		5E37A6B91EE6A787007148C5 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTabBarViewController.swift; path = SwiftDemo/MainTabBarViewController.swift; sourceTree = SOURCE_ROOT; };
+		5E37A6BB1EE6A795007148C5 /* MainNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainNavViewController.swift; path = SwiftDemo/MainNavViewController.swift; sourceTree = SOURCE_ROOT; };
 		5E9EB1D31EE4F0AD0042DDB0 /* JWScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,10 +96,10 @@
 		5E2AC6B31EE133E800E0B0CC /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				5E2AC6991EE0FFDB00E0B0CC /* AppDelegate.swift */,
+				5E37A6B71EE6A771007148C5 /* AppDelegate.swift */,
 				5E2AC6B11EE133CD00E0B0CC /* BaseViewController.swift */,
-				5E2AC6AD1EE1008700E0B0CC /* MainTabBarViewController.swift */,
-				5E2AC6AF1EE1020500E0B0CC /* MainNavViewController.swift */,
+				5E37A6B91EE6A787007148C5 /* MainTabBarViewController.swift */,
+				5E37A6BB1EE6A795007148C5 /* MainNavViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -216,20 +216,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E2AC6B21EE133CD00E0B0CC /* BaseViewController.swift in Sources */,
-				5E2AC6AE1EE1008700E0B0CC /* MainTabBarViewController.swift in Sources */,
 				5E9EB1D41EE4F0AD0042DDB0 /* JWScrollView.swift in Sources */,
 				5E37A6B41EE68532007148C5 /* CustomCellModel.swift in Sources */,
 				5E2AC6BD1EE135B200E0B0CC /* JWMacro.swift in Sources */,
 				5E2AC69C1EE0FFDB00E0B0CC /* ViewController.swift in Sources */,
 				5E37A6B01EE6846B007148C5 /* FindViewController.swift in Sources */,
-				5E2AC69A1EE0FFDB00E0B0CC /* AppDelegate.swift in Sources */,
-				5E2AC6B01EE1020500E0B0CC /* MainNavViewController.swift in Sources */,
+				5E37A6B81EE6A771007148C5 /* AppDelegate.swift in Sources */,
+				5E37A6BA1EE6A787007148C5 /* MainTabBarViewController.swift in Sources */,
 				5E20A1381EE15E1F0035AC56 /* UIViewExtension.swift in Sources */,
 				5E37A6AE1EE65683007148C5 /* CirCleView.swift in Sources */,
 				5E37A6B21EE684F0007148C5 /* CustomTableViewCell.swift in Sources */,
 				5E37A6A81EE52B08007148C5 /* JWScrollviewCell.swift in Sources */,
 				5E20A1361EE145890035AC56 /* ProductViewController.swift in Sources */,
 				5E2AC6BA1EE134CA00E0B0CC /* HomeViewController.swift in Sources */,
+				5E37A6BC1EE6A795007148C5 /* MainNavViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
