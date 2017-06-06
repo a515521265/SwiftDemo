@@ -21,6 +21,9 @@
 		5E2AC6BD1EE135B200E0B0CC /* JWMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2AC6BC1EE135B200E0B0CC /* JWMacro.swift */; };
 		5E37A6A81EE52B08007148C5 /* JWScrollviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E37A6A71EE52B08007148C5 /* JWScrollviewCell.swift */; };
 		5E37A6AE1EE65683007148C5 /* CirCleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E37A6AD1EE65683007148C5 /* CirCleView.swift */; };
+		5E37A6B01EE6846B007148C5 /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E37A6AF1EE6846B007148C5 /* FindViewController.swift */; };
+		5E37A6B21EE684F0007148C5 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E37A6B11EE684F0007148C5 /* CustomTableViewCell.swift */; };
+		5E37A6B41EE68532007148C5 /* CustomCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E37A6B31EE68532007148C5 /* CustomCellModel.swift */; };
 		5E9EB1D41EE4F0AD0042DDB0 /* JWScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9EB1D31EE4F0AD0042DDB0 /* JWScrollView.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +44,9 @@
 		5E2AC6BC1EE135B200E0B0CC /* JWMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWMacro.swift; sourceTree = "<group>"; };
 		5E37A6A71EE52B08007148C5 /* JWScrollviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWScrollviewCell.swift; sourceTree = "<group>"; };
 		5E37A6AD1EE65683007148C5 /* CirCleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CirCleView.swift; sourceTree = "<group>"; };
+		5E37A6AF1EE6846B007148C5 /* FindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
+		5E37A6B11EE684F0007148C5 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		5E37A6B31EE68532007148C5 /* CustomCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCellModel.swift; sourceTree = "<group>"; };
 		5E9EB1D31EE4F0AD0042DDB0 /* JWScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +110,7 @@
 				5E2AC69B1EE0FFDB00E0B0CC /* ViewController.swift */,
 				5E2AC6B91EE134CA00E0B0CC /* HomeViewController.swift */,
 				5E20A1351EE145890035AC56 /* ProductViewController.swift */,
+				5E37A6AF1EE6846B007148C5 /* FindViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -112,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				5E37A6AD1EE65683007148C5 /* CirCleView.swift */,
+				5E37A6B11EE684F0007148C5 /* CustomTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -119,6 +127,7 @@
 		5E2AC6B61EE1344000E0B0CC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5E37A6B31EE68532007148C5 /* CustomCellModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -209,12 +218,15 @@
 				5E2AC6B21EE133CD00E0B0CC /* BaseViewController.swift in Sources */,
 				5E2AC6AE1EE1008700E0B0CC /* MainTabBarViewController.swift in Sources */,
 				5E9EB1D41EE4F0AD0042DDB0 /* JWScrollView.swift in Sources */,
+				5E37A6B41EE68532007148C5 /* CustomCellModel.swift in Sources */,
 				5E2AC6BD1EE135B200E0B0CC /* JWMacro.swift in Sources */,
 				5E2AC69C1EE0FFDB00E0B0CC /* ViewController.swift in Sources */,
+				5E37A6B01EE6846B007148C5 /* FindViewController.swift in Sources */,
 				5E2AC69A1EE0FFDB00E0B0CC /* AppDelegate.swift in Sources */,
 				5E2AC6B01EE1020500E0B0CC /* MainNavViewController.swift in Sources */,
 				5E20A1381EE15E1F0035AC56 /* UIViewExtension.swift in Sources */,
 				5E37A6AE1EE65683007148C5 /* CirCleView.swift in Sources */,
+				5E37A6B21EE684F0007148C5 /* CustomTableViewCell.swift in Sources */,
 				5E37A6A81EE52B08007148C5 /* JWScrollviewCell.swift in Sources */,
 				5E20A1361EE145890035AC56 /* ProductViewController.swift in Sources */,
 				5E2AC6BA1EE134CA00E0B0CC /* HomeViewController.swift in Sources */,
