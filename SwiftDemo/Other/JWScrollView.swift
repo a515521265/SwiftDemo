@@ -15,6 +15,8 @@ class JWScrollView: UIScrollView {
     
     public var paddingHeight = CGFloat()
     
+    public var topPaddingHeight = CGFloat()
+    
     public var isGestureEnabled = Bool()
     //block变量
     public var tapSelectRow : tapSelectRow?
@@ -42,7 +44,7 @@ class JWScrollView: UIScrollView {
         let firstView = views.first
         firstView?.tag = 1992
         //莫名其妙的偏移。。。处理一下
-        firstView?.y = -(firstView?.height)!
+        firstView?.y = -(firstView?.height)! + topPaddingHeight
         firstView?.x = (kScreenWidth - (firstView?.width)!)/2
         
         if self.isGestureEnabled {
@@ -78,7 +80,7 @@ class JWScrollView: UIScrollView {
             
             if item == views.count-1 {
                 
-                self.contentSize = CGSize.init(width: 0, height: (self.subviews.last?.y)! + (self.subviews.last?.height)! + self.paddingHeight)
+                self.contentSize = CGSize.init(width: 0, height: (self.subviews.last?.y)! + (self.subviews.last?.height)! + self.paddingHeight + self.topPaddingHeight)
                 
             }
             

@@ -13,12 +13,12 @@ class ProductViewController: BaseViewController {
     
     let scrollerView = { () -> JWScrollView in 
     
-        
         let sv = JWScrollView.init(frame: CGRect.init(x: 0, y: 0, width: kScreenWidth, height: kScreenHeight))
-        
         sv.alwaysBounceVertical = true
         sv.isGestureEnabled = true
         sv.keyboardDismissMode = UIScrollViewKeyboardDismissMode.onDrag
+        sv.backgroundColor = UIColor.groupTableViewBackground
+        sv.topPaddingHeight = 10
         return sv;
         
     }()
@@ -31,13 +31,11 @@ class ProductViewController: BaseViewController {
         
         var arr = Array<UIView>()
         
-        
-        
-        for _ in 1...5 {
+        for _ in 1...15 {
             let cells = JWScrollviewCell.init(frame: CGRect.init(x: 0, y: 0, width: kScreenWidth, height: 50))
             cells.leftLabel().text = "账号"
             cells.rightTextField().placeholder = "请输入您的账号"
-            cells.setLineColor(lineColor: UIColor.gray)
+            cells.setLineColor(lineColor: UIColor.groupTableViewBackground)
             cells.setUPandDownSpacing(upSpacing: 0.5, downSpacing: 0.5)
             arr.append(cells);
         }
