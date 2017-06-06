@@ -12,3 +12,10 @@ import UIKit
 let kScreenFrame = UIScreen.main.bounds
 let kScreenWidth = UIScreen.main.bounds.size.width
 let kScreenHeight = UIScreen.main.bounds.size.height
+
+
+//blcoks
+typealias tapSelectRow = (NSInteger) -> ()
+typealias click = (Void) -> Void
+
+

@@ -18,6 +18,7 @@ class ProductViewController: BaseViewController {
         
         sv.alwaysBounceVertical = true
         sv.isGestureEnabled = true
+        sv.keyboardDismissMode = UIScrollViewKeyboardDismissMode.onDrag
         return sv;
         
     }()
@@ -26,41 +27,50 @@ class ProductViewController: BaseViewController {
         super.viewDidLoad()
         //添加控件位置偏差
 //        self.automaticallyAdjustsScrollViewInsets = false;
-
         self.view.addSubview(scrollerView);
         
-        
-        let cell1 = JWScrollviewCell.init(frame: CGRect.init(x: 0, y: 0, width: kScreenWidth, height: 80))
-        cell1.leftLabel().text = "账号"
-        cell1.rightTextField().placeholder = "请输入您的账号"
-        cell1.setLineColor(lineColor: UIColor.gray)
-        cell1.isGestureEnabled = true
-        cell1.setUPandDownSpacing(upSpacing: 5, downSpacing: 5)
+        var arr = Array<UIView>()
         
         
-        let lab1 = UILabel.init(frame: CGRect.init(x: 0, y: 0, width: kScreenWidth, height: 90));
-        lab1.text = "label1"
-        lab1.textAlignment = NSTextAlignment.center;
-        lab1.backgroundColor = UIColor.red
+        
+        for _ in 1...5 {
+            let cells = JWScrollviewCell.init(frame: CGRect.init(x: 0, y: 0, width: kScreenWidth, height: 50))
+            cells.leftLabel().text = "账号"
+            cells.rightTextField().placeholder = "请输入您的账号"
+            cells.setLineColor(lineColor: UIColor.gray)
+            cells.setUPandDownSpacing(upSpacing: 0.5, downSpacing: 0.5)
+            arr.append(cells);
+        }
+        self.scrollerView.setScrollerviewSubViewsArr(views: arr)
         
         
-        let lab2 = UILabel.init(frame: CGRect.init(x: 0, y: 0, width: kScreenWidth, height: 130));
-        lab2.text = "label2"
-        lab2.textAlignment = NSTextAlignment.center;
-        lab2.backgroundColor = UIColor.yellow
         
-        let lab3 = UILabel.init(frame: CGRect.init(x: 0, y: 0, width: kScreenWidth, height: 50));
-        lab3.text = "label3"
-        lab3.textAlignment = NSTextAlignment.center;
-        lab3.backgroundColor = UIColor.red
+//        let lab1 = UILabel.init(frame: CGRect.init(x: 0, y: 0, width: kScreenWidth, height: 90));
+//        lab1.text = "label1"
+//        lab1.textAlignment = NSTextAlignment.center;
+//        lab1.backgroundColor = UIColor.red
+//        
+//        
+//        let lab2 = UILabel.init(frame: CGRect.init(x: 0, y: 0, width: kScreenWidth, height: 130));
+//        lab2.text = "label2"
+//        lab2.textAlignment = NSTextAlignment.center;
+//        lab2.backgroundColor = UIColor.yellow
+//        
+//        let lab3 = UILabel.init(frame: CGRect.init(x: 0, y: 0, width: kScreenWidth, height: 50));
+//        lab3.text = "label3"
+//        lab3.textAlignment = NSTextAlignment.center;
+//        lab3.backgroundColor = UIColor.red
         
-        self.scrollerView.setScrollerviewSubViewsArr(views: [lab1,lab2,lab3,cell1])
+//        self.scrollerView.setScrollerviewSubViewsArr(views: [lab1,lab2,lab3,cell1])
         
 
-        self.scrollerView.tapSelectRow = {(row) in
-            
-            print(row);
-        }
+//        self.scrollerView.tapSelectRow = {(row) in
+//            
+//            print(row);
+//            
+//            self.view.endEditing(true)
+//            
+//        }
 
         
         

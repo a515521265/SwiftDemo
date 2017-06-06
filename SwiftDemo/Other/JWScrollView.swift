@@ -8,18 +8,9 @@
 
 import UIKit
 
-//定义block
-typealias tapSelectRow = (NSInteger) -> ()
-
-
 
 class JWScrollView: UIScrollView {
 
-    
-    
-    //定义block
-//    typealias tapSelectRow = (NSInteger) -> ()
-    
     public var allSubviews = Array<UIView>()
     
     public var paddingHeight = CGFloat()

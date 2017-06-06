@@ -8,10 +8,10 @@
 
 import UIKit
 
-//定义block
-typealias click = (Void) -> Void
-
 class JWScrollviewCell: UIView {
+    
+    
+    
     
     public var _isGestureEnabled = Bool()
     
@@ -134,6 +134,8 @@ class JWScrollviewCell: UIView {
     
     func getElementByTag(viewTag:NSInteger) -> UIView {
         
+        
+        
         return UIView();
         
     }
@@ -145,22 +147,33 @@ class JWScrollviewCell: UIView {
             _isGestureEnabled = (newValue != nil)
             
             if self.isGestureEnabled! {
+                
                 self.clickButton.frame = CGRect.init(x: 0, y: 0, width: self.contentView.width, height: self.contentView.height)
-                
-//                self.clickButton.addSingleTapEvent({ 
-//                    print("------")
-//                })
-                
+
+                self.clickButton.addTarget(self, action: #selector(butclick), for: UIControlEvents.touchUpInside)
+
                 self.contentView.addSubview(self.clickButton)
                 
             }else{
-            
+                
+                self.clickButton.removeFromSuperview()
+                
             }
             
         }
         get{
             return _isGestureEnabled
         }
+        
+    }
+    
+    
+    func butclick() {
+        
+        if click != nil {
+            click!()
+        }
+
         
     }
     
