@@ -8,8 +8,10 @@
 
 import UIKit
 
-class ProductViewController: BaseViewController {
+class ProductViewController: BaseViewController ,CirCleViewDelegate{
 
+    
+    var circleView = CirCleView()
     
     let scrollerView = { () -> JWScrollView in 
     
@@ -29,7 +31,23 @@ class ProductViewController: BaseViewController {
 //        self.automaticallyAdjustsScrollViewInsets = false;
         self.view.addSubview(scrollerView);
         
+        
+//        let imageArray: [UIImage?] = [UIImage(named: "first.jpg"), UIImage(named: "second.jpg"), UIImage(named: "third.jpg")]
+        
+        self.circleView = CirCleView(frame: CGRect(x: 0, y: 64, width: self.view.frame.size.width, height: 200), imageArray: [])
+        circleView.backgroundColor = UIColor.orange
+        circleView.delegate = self
+//        self.view.addSubview(circleView)
+        
+        delay(2)  {
+            self.circleView.urlImageArray = ["http://a2.qpic.cn/psb?/V14fUnYP0SXDXU/RjNqTMAuvskdaYVmg3NkVlg*JK6owbqyD4.M*ql52ik!/b/dAQAAAAAAAAA&bo=cgcgA.MOQAYFCNY!&rf=viewer_4","http://a1.qpic.cn/psb?/V14fUnYP0SXDXU/1ZZAgz.VFZRKb8Cegre.eZuJJfhjjXjIhG8n.EahULk!/b/dAMAAAAAAAAA&bo=KwQgA0AGsAQFAN0!&rf=viewer_4","http://a2.qpic.cn/psb?/V14fUnYP0SXDXU/xwT4aLFAO.gT32CKLU0o6Q0SmMjmcM0v8WXTb2M6gwI!/b/dAQAAAAAAAAA&bo=KwQgA0AGsAQFAN0!&rf=viewer_4"]
+        }
+        
+
+        
         var arr = Array<UIView>()
+        
+        arr.append(circleView)
         
         for _ in 1...15 {
             let cells = JWScrollviewCell.init(frame: CGRect.init(x: 0, y: 0, width: kScreenWidth, height: 50))
@@ -74,5 +92,14 @@ class ProductViewController: BaseViewController {
         
         
     }
+    
+    /************************** Delegate Methods *************************************/
+    //MARK:- Delegate Methods
+    //MARK: CirCleViewDelegate Methods
+    
+    func clickCurrentImage(_ currentIndxe: Int) {
+        print(currentIndxe, terminator: "");
+    }
+
     
 }
