@@ -267,6 +267,18 @@ extension UIView {
         
     }
     
+    func getElementByTag(viewTag:NSInteger) -> UIView {
+        
+        for (_,item) in self.subviews.enumerated() {
+            if item.tag == viewTag {
+                return item
+            }
+        }
+        return UIView();
+        
+    }
+
+    
     
     
     func singleTapAction() {

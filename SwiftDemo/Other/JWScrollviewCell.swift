@@ -131,16 +131,6 @@ class JWScrollviewCell: UIView {
         
     }
     
-    
-    func getElementByTag(viewTag:NSInteger) -> UIView {
-        
-        
-        
-        return UIView();
-        
-    }
-    
-    
     var isGestureEnabled: Bool?{
     
         set{
