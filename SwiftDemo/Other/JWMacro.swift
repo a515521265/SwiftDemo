@@ -15,6 +15,7 @@ let kScreenHeight = UIScreen.main.bounds.size.height
 
 
 //blcoks
+typealias cellClick = (UIImageView) -> Void
 typealias tapSelectRow = (NSInteger) -> ()
 typealias click = (Void) -> Void
 

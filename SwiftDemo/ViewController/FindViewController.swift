@@ -59,6 +59,13 @@ class FindViewController: BaseViewController,UITableViewDelegate,UITableViewData
         cell?.setcellModel(model: dataArr[indexPath.row])
         cell?.textLabel?.textColor = UIColor.black
         cell?.selectionStyle = UITableViewCellSelectionStyle.none
+        cell?.tapCell = {(imagev) in
+            let showVC = ShowAlertViewController()
+            showVC.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+            showVC.modalPresentationStyle = UIModalPresentationStyle.custom
+            showVC.showImageView = imagev
+            self.present(showVC, animated: true, completion: nil)
+        }
         return cell!;
     }
     
