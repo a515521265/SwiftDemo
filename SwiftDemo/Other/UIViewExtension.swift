@@ -279,6 +279,16 @@ extension UIView {
     }
 
     
+    func getRelativewindowFrame(view:UIView) -> CGRect{
+        
+        let window = UIApplication.shared.keyWindow
+        
+        let relativeframe = view.convert(view.bounds, to: window)
+        
+        return relativeframe
+        
+    }
+    
     
     
     func singleTapAction() {

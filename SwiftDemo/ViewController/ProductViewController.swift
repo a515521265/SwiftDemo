@@ -43,8 +43,6 @@ class ProductViewController: BaseViewController ,CirCleViewDelegate{
             self.circleView.urlImageArray = ["http://a2.qpic.cn/psb?/V14fUnYP0SXDXU/RjNqTMAuvskdaYVmg3NkVlg*JK6owbqyD4.M*ql52ik!/b/dAQAAAAAAAAA&bo=cgcgA.MOQAYFCNY!&rf=viewer_4","http://a1.qpic.cn/psb?/V14fUnYP0SXDXU/1ZZAgz.VFZRKb8Cegre.eZuJJfhjjXjIhG8n.EahULk!/b/dAMAAAAAAAAA&bo=KwQgA0AGsAQFAN0!&rf=viewer_4","http://a2.qpic.cn/psb?/V14fUnYP0SXDXU/xwT4aLFAO.gT32CKLU0o6Q0SmMjmcM0v8WXTb2M6gwI!/b/dAQAAAAAAAAA&bo=KwQgA0AGsAQFAN0!&rf=viewer_4"]
         }
         
-
-        
         var arr = Array<UIView>()
         
         arr.append(circleView)

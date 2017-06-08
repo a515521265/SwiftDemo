@@ -25,6 +25,7 @@
 		5E37A6BA1EE6A787007148C5 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E37A6B91EE6A787007148C5 /* MainTabBarViewController.swift */; };
 		5E37A6BC1EE6A795007148C5 /* MainNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E37A6BB1EE6A795007148C5 /* MainNavViewController.swift */; };
 		5E9EB1D41EE4F0AD0042DDB0 /* JWScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9EB1D31EE4F0AD0042DDB0 /* JWScrollView.swift */; };
+		5EB5FAD31EE8DEF7002CC6A2 /* ShowAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB5FAD21EE8DEF7002CC6A2 /* ShowAlertViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		5E37A6B91EE6A787007148C5 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTabBarViewController.swift; path = SwiftDemo/MainTabBarViewController.swift; sourceTree = SOURCE_ROOT; };
 		5E37A6BB1EE6A795007148C5 /* MainNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainNavViewController.swift; path = SwiftDemo/MainNavViewController.swift; sourceTree = SOURCE_ROOT; };
 		5E9EB1D31EE4F0AD0042DDB0 /* JWScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWScrollView.swift; sourceTree = "<group>"; };
+		5EB5FAD21EE8DEF7002CC6A2 /* ShowAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShowAlertViewController.swift; path = SwiftDemo/ViewController/ShowAlertViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				5E2AC6B11EE133CD00E0B0CC /* BaseViewController.swift */,
 				5E37A6B91EE6A787007148C5 /* MainTabBarViewController.swift */,
 				5E37A6BB1EE6A795007148C5 /* MainNavViewController.swift */,
+				5EB5FAD21EE8DEF7002CC6A2 /* ShowAlertViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EB5FAD31EE8DEF7002CC6A2 /* ShowAlertViewController.swift in Sources */,
 				5E2AC6B21EE133CD00E0B0CC /* BaseViewController.swift in Sources */,
 				5E9EB1D41EE4F0AD0042DDB0 /* JWScrollView.swift in Sources */,
 				5E37A6B41EE68532007148C5 /* CustomCellModel.swift in Sources */,
