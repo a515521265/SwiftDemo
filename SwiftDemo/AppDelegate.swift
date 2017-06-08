@@ -21,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window?.rootViewController = MainTabBarViewController();
         
+        // 哈哈
         
         return true
     }
