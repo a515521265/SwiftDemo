@@ -30,18 +30,24 @@ class AccountViewController: BaseViewController,UITableViewDelegate,UITableViewD
         
         arr = [["title" : "小学同学",
                 "contentS" : ["哈哈哈","嘿嘿嘿"],
-                "isShow" : false],
+                "isShow" : false,
+                "headIcon" : "dinosaur"],
+               
                
                ["title" : "初中同学",
                 "contentS" : ["呵呵呵","嘻嘻嘻"],
-                "isShow" : false],
+                "isShow" : false,
+                "headIcon" : "github"],
                
                ["title" : "高中同学",
                 "contentS" : ["吃吃吃","喝喝喝"],
-                "isShow" : false],
+                "isShow" : false,
+                "headIcon" : "dinosaur"],
                ["title" : "大学同学",
                 "contentS" : ["玩玩玩","乐乐乐"],
-                "isShow" : false]]
+                "isShow" : false,
+                "headIcon" : "github"]
+        ]
         
         for (_,item) in arr.enumerated() {
             
@@ -67,7 +73,7 @@ class AccountViewController: BaseViewController,UITableViewDelegate,UITableViewD
         cell?.textLabel?.textColor = UIColor.black
         
         let model =  dataArr[indexPath.section]
-        
+        cell?.imageView?.image = UIImage.init(named: model.headIcon)
         cell?.textLabel?.text = model.contentS[indexPath.row]
         return cell!;
     }
@@ -81,7 +87,7 @@ class AccountViewController: BaseViewController,UITableViewDelegate,UITableViewD
         
         view.frame = CGRect.init(x: 0, y: 0, width: kScreenWidth, height: 50)
         
-        let lab = UILabel.init(frame: CGRect.init(x: 20, y: 0, width: 200, height: 50))
+        let lab = UILabel.init(frame: CGRect.init(x: 20, y: 0, width: kScreenWidth-40, height: 50))
         
         let dict = dataArr[section]
         

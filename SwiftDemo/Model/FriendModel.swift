@@ -14,6 +14,9 @@ class FriendModel: Reflect {
     var title =  String()
     var contentS =  Array<String>()
     var isShow = Bool()
+    var headIcon = String()
+    var explain = String()
+    
 
     
     
