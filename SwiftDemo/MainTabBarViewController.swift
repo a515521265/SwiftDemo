@@ -10,6 +10,13 @@ import UIKit
 
 class MainTabBarViewController: UITabBarController,UITabBarControllerDelegate {
 
+    
+    var subV = Array<UIView>()
+    
+    var selectV = UIView()
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,39 +42,45 @@ class MainTabBarViewController: UITabBarController,UITabBarControllerDelegate {
         settabBar(nav: nav5, title: "更多", image: "cm2_btm_icn_discovery", selectedImage: "cm2_btm_icn_discovery_prs")
         
 
-        
-        
-        
 //        print(self.tabBar.subviews);
-//        
-//        let arrs = self.tabBar.subviews;
-//        
-//        
-//        for (_,item) in arrs.enumerated() {
-//            
-//            let cview = UIView.init(frame: item.frame);
-//            
-//            cview.backgroundColor = UIColor.red
-//            
-//            cview.width = kScreenWidth/5;
-//            
-//            cview.isUserInteractionEnabled = false;
-//            
-//            cview.alpha = 0.5;
-//            
-//            self.tabBar.addSubview(cview);
-//            
-//        }
         
+        var arrs = self.tabBar.subviews;
+        //删掉图片
+        arrs.remove(at: 0)
         
+        for (i,item) in arrs.enumerated() {
+            
+            let cview = UIView.init(frame: item.frame);
+            
+            cview.backgroundColor = UIColor.red
+            
+            cview.x = CGFloat(i) * (kScreenWidth/5);
+            
+            cview.width = kScreenWidth/5;
+            
+            cview.height = 6;
+            
+            cview.y = item.height-5;
+            
+            self.tabBar.addSubview(cview);
+            
+            subV.append(cview)
+            
+        }
         
+        self.selectV.backgroundColor = UIColor.yellow
+        
+        self.selectV.frame = CGRect.init(x: 0, y: (arrs.first?.height)!-5, width: kScreenWidth/5, height: 6)
+        
+        self.tabBar.addSubview(self.selectV)
+
     }
 
     
     func settabBar(nav:UINavigationController,title:String,image:String,selectedImage:String)  {
         self.addChildViewController(nav)
         
-        nav.tabBarItem = UITabBarItem.init(title: title, image: UIImage.init(named: image), selectedImage: UIImage.init(named: selectedImage));
+        nav.tabBarItem = UITabBarItem.init(title: "", image: UIImage.init(named: image), selectedImage: UIImage.init(named: selectedImage));
         nav.tabBarItem.image = UIImage.init(named: image)?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
         nav.tabBarItem.selectedImage = UIImage.init(named: selectedImage)?.withRenderingMode(UIImageRenderingMode.alwaysOriginal);
         
@@ -86,8 +99,12 @@ class MainTabBarViewController: UITabBarController,UITabBarControllerDelegate {
     
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
         
+        UIView.animate(withDuration: 0.1, animations: { 
+            
+            self.selectV.frame = self.subV[self.selectedIndex].frame
+            
+        }, completion: nil)
         
-        print(self.selectedIndex);
         
         
     }
