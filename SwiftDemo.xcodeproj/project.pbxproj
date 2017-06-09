@@ -262,6 +262,7 @@
 				TargetAttributes = {
 					5E2AC6951EE0FFDB00E0B0CC = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = X8QG2P52G7;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -452,7 +453,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X8QG2P52G7;
 				INFOPLIST_FILE = SwiftDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liangxiansen2.SwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -464,7 +467,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X8QG2P52G7;
 				INFOPLIST_FILE = SwiftDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liangxiansen2.SwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

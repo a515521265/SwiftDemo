@@ -99,7 +99,7 @@ class MainTabBarViewController: UITabBarController,UITabBarControllerDelegate {
     
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
         
-        UIView.animate(withDuration: 0.1, animations: { 
+        UIView.animate(withDuration: 0.3, animations: {
             
             self.selectV.frame = self.subV[self.selectedIndex].frame
             
