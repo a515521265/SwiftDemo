@@ -38,7 +38,7 @@ class MainTabBarViewController: UITabBarController,UITabBarControllerDelegate {
         settabBar(nav: nav3, title: "发现", image: "cm2_btm_icn_friend", selectedImage: "cm2_btm_icn_friend_prs")
         let nav4 = MainNavViewController.init(rootViewController: AccountViewController());
         settabBar(nav: nav4, title: "账户", image: "cm2_btm_icn_music", selectedImage: "cm2_btm_icn_music_prs")
-        let nav5 = MainNavViewController.init(rootViewController: ViewController());
+        let nav5 = MainNavViewController.init(rootViewController: MoreViewController());
         settabBar(nav: nav5, title: "更多", image: "cm2_btm_icn_discovery", selectedImage: "cm2_btm_icn_discovery_prs")
         
 

@@ -1,37 +1,27 @@
 //
-//  BaseViewController.swift
+//  MoreViewController.swift
 //  SwiftDemo
 //
-//  Created by 梁家文 on 2017/6/2.
+//  Created by 梁家文 on 2017/6/9.
 //  Copyright © 2017年 梁家文. All rights reserved.
 //
 
 import UIKit
 
-class BaseViewController: UIViewController {
+class MoreViewController: BaseViewController {
 
-    
-    public let object = NSObject()
-    
     override func viewDidLoad() {
-        
         super.viewDidLoad()
-        
-        view.backgroundColor = UIColor.white
-    
-        self.navigationController?.navigationBar.isHidden = true
-        
+
+        // Do any additional setup after loading the view.
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
     
 
-    override var prefersStatusBarHidden : Bool {
-    
-        get{
-            return true
-        }
-        
-    }
-    
     /*
     // MARK: - Navigation
 

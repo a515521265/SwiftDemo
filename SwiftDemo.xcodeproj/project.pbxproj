@@ -35,6 +35,7 @@
 		5E7D19521EEA375D0067FFF4 /* Reflect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7D194A1EEA375D0067FFF4 /* Reflect.swift */; };
 		5E7D19541EEA379F0067FFF4 /* FriendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7D19531EEA379F0067FFF4 /* FriendModel.swift */; };
 		5E7D19561EEA39E40067FFF4 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7D19551EEA39E40067FFF4 /* AccountViewController.swift */; };
+		5E7D195E1EEA8ABB0067FFF4 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7D195D1EEA8ABB0067FFF4 /* MoreViewController.swift */; };
 		5E9EB1D41EE4F0AD0042DDB0 /* JWScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9EB1D31EE4F0AD0042DDB0 /* JWScrollView.swift */; };
 		5EB5FAD31EE8DEF7002CC6A2 /* ShowAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB5FAD21EE8DEF7002CC6A2 /* ShowAlertViewController.swift */; };
 /* End PBXBuildFile section */
@@ -70,6 +71,7 @@
 		5E7D194A1EEA375D0067FFF4 /* Reflect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reflect.swift; sourceTree = "<group>"; };
 		5E7D19531EEA379F0067FFF4 /* FriendModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendModel.swift; sourceTree = "<group>"; };
 		5E7D19551EEA39E40067FFF4 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		5E7D195D1EEA8ABB0067FFF4 /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		5E9EB1D31EE4F0AD0042DDB0 /* JWScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWScrollView.swift; sourceTree = "<group>"; };
 		5EB5FAD21EE8DEF7002CC6A2 /* ShowAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShowAlertViewController.swift; path = SwiftDemo/ViewController/ShowAlertViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -138,6 +140,7 @@
 				5E20A1351EE145890035AC56 /* ProductViewController.swift */,
 				5E37A6AF1EE6846B007148C5 /* FindViewController.swift */,
 				5E7D19551EEA39E40067FFF4 /* AccountViewController.swift */,
+				5E7D195D1EEA8ABB0067FFF4 /* MoreViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				5E37A6A81EE52B08007148C5 /* JWScrollviewCell.swift in Sources */,
 				5E20A1361EE145890035AC56 /* ProductViewController.swift in Sources */,
 				5E2AC6BA1EE134CA00E0B0CC /* HomeViewController.swift in Sources */,
+				5E7D195E1EEA8ABB0067FFF4 /* MoreViewController.swift in Sources */,
 				5E7D19501EEA375D0067FFF4 /* Reflect+Property.swift in Sources */,
 				5E7D194D1EEA375D0067FFF4 /* Reflect+Convert.swift in Sources */,
 				5E7D19521EEA375D0067FFF4 /* Reflect.swift in Sources */,

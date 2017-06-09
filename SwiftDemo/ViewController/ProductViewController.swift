@@ -20,7 +20,7 @@ class ProductViewController: BaseViewController ,CirCleViewDelegate{
         sv.isGestureEnabled = true
         sv.keyboardDismissMode = UIScrollViewKeyboardDismissMode.onDrag
         sv.backgroundColor = UIColor.groupTableViewBackground
-        sv.topPaddingHeight = 10
+//        sv.topPaddingHeight = 10
         return sv;
         
     }()
