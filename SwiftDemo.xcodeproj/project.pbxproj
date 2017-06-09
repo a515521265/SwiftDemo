@@ -24,6 +24,7 @@
 		5E37A6B81EE6A771007148C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E37A6B71EE6A771007148C5 /* AppDelegate.swift */; };
 		5E37A6BA1EE6A787007148C5 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E37A6B91EE6A787007148C5 /* MainTabBarViewController.swift */; };
 		5E37A6BC1EE6A795007148C5 /* MainNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E37A6BB1EE6A795007148C5 /* MainNavViewController.swift */; };
+		5E7D193C1EEA32D50067FFF4 /* NSMutableAttributedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7D193B1EEA32D50067FFF4 /* NSMutableAttributedString+Extension.swift */; };
 		5E9EB1D41EE4F0AD0042DDB0 /* JWScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9EB1D31EE4F0AD0042DDB0 /* JWScrollView.swift */; };
 		5EB5FAD31EE8DEF7002CC6A2 /* ShowAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB5FAD21EE8DEF7002CC6A2 /* ShowAlertViewController.swift */; };
 /* End PBXBuildFile section */
@@ -48,6 +49,7 @@
 		5E37A6B71EE6A771007148C5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = SwiftDemo/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		5E37A6B91EE6A787007148C5 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTabBarViewController.swift; path = SwiftDemo/MainTabBarViewController.swift; sourceTree = SOURCE_ROOT; };
 		5E37A6BB1EE6A795007148C5 /* MainNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainNavViewController.swift; path = SwiftDemo/MainNavViewController.swift; sourceTree = SOURCE_ROOT; };
+		5E7D193B1EEA32D50067FFF4 /* NSMutableAttributedString+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Extension.swift"; sourceTree = "<group>"; };
 		5E9EB1D31EE4F0AD0042DDB0 /* JWScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWScrollView.swift; sourceTree = "<group>"; };
 		5EB5FAD21EE8DEF7002CC6A2 /* ShowAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShowAlertViewController.swift; path = SwiftDemo/ViewController/ShowAlertViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -142,6 +144,7 @@
 				5E20A1371EE15E1F0035AC56 /* UIViewExtension.swift */,
 				5E9EB1D31EE4F0AD0042DDB0 /* JWScrollView.swift */,
 				5E37A6A71EE52B08007148C5 /* JWScrollviewCell.swift */,
+				5E7D193B1EEA32D50067FFF4 /* NSMutableAttributedString+Extension.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				5E20A1381EE15E1F0035AC56 /* UIViewExtension.swift in Sources */,
 				5E37A6AE1EE65683007148C5 /* CirCleView.swift in Sources */,
 				5E37A6B21EE684F0007148C5 /* CustomTableViewCell.swift in Sources */,
+				5E7D193C1EEA32D50067FFF4 /* NSMutableAttributedString+Extension.swift in Sources */,
 				5E37A6A81EE52B08007148C5 /* JWScrollviewCell.swift in Sources */,
 				5E20A1361EE145890035AC56 /* ProductViewController.swift in Sources */,
 				5E2AC6BA1EE134CA00E0B0CC /* HomeViewController.swift in Sources */,
