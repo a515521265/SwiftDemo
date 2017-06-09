@@ -20,7 +20,7 @@ class MainTabBarViewController: UITabBarController {
         settabBar(nav: nav2, title: "产品", image: "common-productno", selectedImage: "common-product")
         let nav3 = MainNavViewController.init(rootViewController: FindViewController());
         settabBar(nav: nav3, title: "发现", image: "common-faxianno", selectedImage: "common-faxian")
-        let nav4 = MainNavViewController.init(rootViewController: ViewController());
+        let nav4 = MainNavViewController.init(rootViewController: AccountViewController());
         settabBar(nav: nav4, title: "账户", image: "common-accountno", selectedImage: "common-account")
         let nav5 = MainNavViewController.init(rootViewController: ViewController());
         settabBar(nav: nav5, title: "更多", image: "common-moreno", selectedImage: "common-more")

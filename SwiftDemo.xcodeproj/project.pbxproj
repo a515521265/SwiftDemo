@@ -25,6 +25,16 @@
 		5E37A6BA1EE6A787007148C5 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E37A6B91EE6A787007148C5 /* MainTabBarViewController.swift */; };
 		5E37A6BC1EE6A795007148C5 /* MainNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E37A6BB1EE6A795007148C5 /* MainNavViewController.swift */; };
 		5E7D193C1EEA32D50067FFF4 /* NSMutableAttributedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7D193B1EEA32D50067FFF4 /* NSMutableAttributedString+Extension.swift */; };
+		5E7D194B1EEA375D0067FFF4 /* Reflect+ArcFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7D19401EEA375D0067FFF4 /* Reflect+ArcFile.swift */; };
+		5E7D194C1EEA375D0067FFF4 /* Reflect+Parse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7D19421EEA375D0067FFF4 /* Reflect+Parse.swift */; };
+		5E7D194D1EEA375D0067FFF4 /* Reflect+Convert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7D19441EEA375D0067FFF4 /* Reflect+Convert.swift */; };
+		5E7D194E1EEA375D0067FFF4 /* Reflect+Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7D19461EEA375D0067FFF4 /* Reflect+Class.swift */; };
+		5E7D194F1EEA375D0067FFF4 /* Reflect+Other.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7D19471EEA375D0067FFF4 /* Reflect+Other.swift */; };
+		5E7D19501EEA375D0067FFF4 /* Reflect+Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7D19481EEA375D0067FFF4 /* Reflect+Property.swift */; };
+		5E7D19511EEA375D0067FFF4 /* Reflect+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7D19491EEA375D0067FFF4 /* Reflect+Type.swift */; };
+		5E7D19521EEA375D0067FFF4 /* Reflect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7D194A1EEA375D0067FFF4 /* Reflect.swift */; };
+		5E7D19541EEA379F0067FFF4 /* FriendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7D19531EEA379F0067FFF4 /* FriendModel.swift */; };
+		5E7D19561EEA39E40067FFF4 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7D19551EEA39E40067FFF4 /* AccountViewController.swift */; };
 		5E9EB1D41EE4F0AD0042DDB0 /* JWScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9EB1D31EE4F0AD0042DDB0 /* JWScrollView.swift */; };
 		5EB5FAD31EE8DEF7002CC6A2 /* ShowAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB5FAD21EE8DEF7002CC6A2 /* ShowAlertViewController.swift */; };
 /* End PBXBuildFile section */
@@ -50,6 +60,16 @@
 		5E37A6B91EE6A787007148C5 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTabBarViewController.swift; path = SwiftDemo/MainTabBarViewController.swift; sourceTree = SOURCE_ROOT; };
 		5E37A6BB1EE6A795007148C5 /* MainNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainNavViewController.swift; path = SwiftDemo/MainNavViewController.swift; sourceTree = SOURCE_ROOT; };
 		5E7D193B1EEA32D50067FFF4 /* NSMutableAttributedString+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Extension.swift"; sourceTree = "<group>"; };
+		5E7D19401EEA375D0067FFF4 /* Reflect+ArcFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reflect+ArcFile.swift"; sourceTree = "<group>"; };
+		5E7D19421EEA375D0067FFF4 /* Reflect+Parse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reflect+Parse.swift"; sourceTree = "<group>"; };
+		5E7D19441EEA375D0067FFF4 /* Reflect+Convert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reflect+Convert.swift"; sourceTree = "<group>"; };
+		5E7D19461EEA375D0067FFF4 /* Reflect+Class.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reflect+Class.swift"; sourceTree = "<group>"; };
+		5E7D19471EEA375D0067FFF4 /* Reflect+Other.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reflect+Other.swift"; sourceTree = "<group>"; };
+		5E7D19481EEA375D0067FFF4 /* Reflect+Property.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reflect+Property.swift"; sourceTree = "<group>"; };
+		5E7D19491EEA375D0067FFF4 /* Reflect+Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reflect+Type.swift"; sourceTree = "<group>"; };
+		5E7D194A1EEA375D0067FFF4 /* Reflect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reflect.swift; sourceTree = "<group>"; };
+		5E7D19531EEA379F0067FFF4 /* FriendModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendModel.swift; sourceTree = "<group>"; };
+		5E7D19551EEA39E40067FFF4 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		5E9EB1D31EE4F0AD0042DDB0 /* JWScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWScrollView.swift; sourceTree = "<group>"; };
 		5EB5FAD21EE8DEF7002CC6A2 /* ShowAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShowAlertViewController.swift; path = SwiftDemo/ViewController/ShowAlertViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -84,6 +104,7 @@
 		5E2AC6981EE0FFDB00E0B0CC /* SwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5E7D193D1EEA37490067FFF4 /* ThirdParty */,
 				5E2AC6BB1EE1357700E0B0CC /* Other */,
 				5E2AC6B61EE1344000E0B0CC /* Model */,
 				5E2AC6B51EE1343200E0B0CC /* View */,
@@ -116,6 +137,7 @@
 				5E2AC6B91EE134CA00E0B0CC /* HomeViewController.swift */,
 				5E20A1351EE145890035AC56 /* ProductViewController.swift */,
 				5E37A6AF1EE6846B007148C5 /* FindViewController.swift */,
+				5E7D19551EEA39E40067FFF4 /* AccountViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -133,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				5E37A6B31EE68532007148C5 /* CustomCellModel.swift */,
+				5E7D19531EEA379F0067FFF4 /* FriendModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -147,6 +170,61 @@
 				5E7D193B1EEA32D50067FFF4 /* NSMutableAttributedString+Extension.swift */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		5E7D193D1EEA37490067FFF4 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				5E7D193E1EEA375D0067FFF4 /* Reflect */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		5E7D193E1EEA375D0067FFF4 /* Reflect */ = {
+			isa = PBXGroup;
+			children = (
+				5E7D193F1EEA375D0067FFF4 /* Coding */,
+				5E7D19411EEA375D0067FFF4 /* Dict2Model */,
+				5E7D19431EEA375D0067FFF4 /* Model2Dict */,
+				5E7D19451EEA375D0067FFF4 /* Reflect */,
+				5E7D194A1EEA375D0067FFF4 /* Reflect.swift */,
+			);
+			path = Reflect;
+			sourceTree = "<group>";
+		};
+		5E7D193F1EEA375D0067FFF4 /* Coding */ = {
+			isa = PBXGroup;
+			children = (
+				5E7D19401EEA375D0067FFF4 /* Reflect+ArcFile.swift */,
+			);
+			path = Coding;
+			sourceTree = "<group>";
+		};
+		5E7D19411EEA375D0067FFF4 /* Dict2Model */ = {
+			isa = PBXGroup;
+			children = (
+				5E7D19421EEA375D0067FFF4 /* Reflect+Parse.swift */,
+			);
+			path = Dict2Model;
+			sourceTree = "<group>";
+		};
+		5E7D19431EEA375D0067FFF4 /* Model2Dict */ = {
+			isa = PBXGroup;
+			children = (
+				5E7D19441EEA375D0067FFF4 /* Reflect+Convert.swift */,
+			);
+			path = Model2Dict;
+			sourceTree = "<group>";
+		};
+		5E7D19451EEA375D0067FFF4 /* Reflect */ = {
+			isa = PBXGroup;
+			children = (
+				5E7D19461EEA375D0067FFF4 /* Reflect+Class.swift */,
+				5E7D19471EEA375D0067FFF4 /* Reflect+Other.swift */,
+				5E7D19481EEA375D0067FFF4 /* Reflect+Property.swift */,
+				5E7D19491EEA375D0067FFF4 /* Reflect+Type.swift */,
+			);
+			path = Reflect;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,11 +299,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E7D194F1EEA375D0067FFF4 /* Reflect+Other.swift in Sources */,
 				5EB5FAD31EE8DEF7002CC6A2 /* ShowAlertViewController.swift in Sources */,
 				5E2AC6B21EE133CD00E0B0CC /* BaseViewController.swift in Sources */,
 				5E9EB1D41EE4F0AD0042DDB0 /* JWScrollView.swift in Sources */,
 				5E37A6B41EE68532007148C5 /* CustomCellModel.swift in Sources */,
+				5E7D194E1EEA375D0067FFF4 /* Reflect+Class.swift in Sources */,
 				5E2AC6BD1EE135B200E0B0CC /* JWMacro.swift in Sources */,
+				5E7D19541EEA379F0067FFF4 /* FriendModel.swift in Sources */,
+				5E7D19561EEA39E40067FFF4 /* AccountViewController.swift in Sources */,
+				5E7D194C1EEA375D0067FFF4 /* Reflect+Parse.swift in Sources */,
 				5E2AC69C1EE0FFDB00E0B0CC /* ViewController.swift in Sources */,
 				5E37A6B01EE6846B007148C5 /* FindViewController.swift in Sources */,
 				5E37A6B81EE6A771007148C5 /* AppDelegate.swift in Sources */,
@@ -237,7 +320,12 @@
 				5E37A6A81EE52B08007148C5 /* JWScrollviewCell.swift in Sources */,
 				5E20A1361EE145890035AC56 /* ProductViewController.swift in Sources */,
 				5E2AC6BA1EE134CA00E0B0CC /* HomeViewController.swift in Sources */,
+				5E7D19501EEA375D0067FFF4 /* Reflect+Property.swift in Sources */,
+				5E7D194D1EEA375D0067FFF4 /* Reflect+Convert.swift in Sources */,
+				5E7D19521EEA375D0067FFF4 /* Reflect.swift in Sources */,
+				5E7D194B1EEA375D0067FFF4 /* Reflect+ArcFile.swift in Sources */,
 				5E37A6BC1EE6A795007148C5 /* MainNavViewController.swift in Sources */,
+				5E7D19511EEA375D0067FFF4 /* Reflect+Type.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
