@@ -51,6 +51,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate,CAAnimationDelegate {
         RunLoop.current.add(timer, forMode: RunLoopMode.commonModes)
 
         
+        
+        
+        let sin = Single.shared
+        
+        print("appdelegate---name" + sin.name!)
+        
         return true
         
     }

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		11D88BCD1EEE77090066EABA /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D88BCC1EEE77090066EABA /* UIImage+Gif.swift */; };
 		11D88BD01EEE778D0066EABA /* load0.gif in Resources */ = {isa = PBXBuildFile; fileRef = 11D88BCF1EEE778D0066EABA /* load0.gif */; };
+		11D88BD21EEE7A070066EABA /* Single.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D88BD11EEE7A070066EABA /* Single.swift */; };
 		5E20A1361EE145890035AC56 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E20A1351EE145890035AC56 /* ProductViewController.swift */; };
 		5E20A1381EE15E1F0035AC56 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E20A1371EE15E1F0035AC56 /* UIViewExtension.swift */; };
 		5E2AC69C1EE0FFDB00E0B0CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2AC69B1EE0FFDB00E0B0CC /* ViewController.swift */; };
@@ -45,6 +46,7 @@
 /* Begin PBXFileReference section */
 		11D88BCC1EEE77090066EABA /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
 		11D88BCF1EEE778D0066EABA /* load0.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = load0.gif; sourceTree = "<group>"; };
+		11D88BD11EEE7A070066EABA /* Single.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Single.swift; sourceTree = "<group>"; };
 		5E20A1351EE145890035AC56 /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		5E20A1371EE15E1F0035AC56 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		5E2AC6961EE0FFDB00E0B0CC /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -185,6 +187,7 @@
 				5E37A6A71EE52B08007148C5 /* JWScrollviewCell.swift */,
 				5E7D193B1EEA32D50067FFF4 /* NSMutableAttributedString+Extension.swift */,
 				11D88BCC1EEE77090066EABA /* UIImage+Gif.swift */,
+				11D88BD11EEE7A070066EABA /* Single.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				5E37A6B81EE6A771007148C5 /* AppDelegate.swift in Sources */,
 				5E37A6BA1EE6A787007148C5 /* MainTabBarViewController.swift in Sources */,
 				5E20A1381EE15E1F0035AC56 /* UIViewExtension.swift in Sources */,
+				11D88BD21EEE7A070066EABA /* Single.swift in Sources */,
 				5E37A6AE1EE65683007148C5 /* CirCleView.swift in Sources */,
 				5E37A6B21EE684F0007148C5 /* CustomTableViewCell.swift in Sources */,
 				5E7D193C1EEA32D50067FFF4 /* NSMutableAttributedString+Extension.swift in Sources */,

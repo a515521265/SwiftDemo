@@ -28,6 +28,14 @@ class HomeViewController: BaseViewController ,UITableViewDelegate,UITableViewDat
         
         view.addSubview(tabView);
         
+        
+        let sin = Single.shared
+        
+        sin.name = "keys"
+        
+        print("homeVC------name"+sin.name!)
+        
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
