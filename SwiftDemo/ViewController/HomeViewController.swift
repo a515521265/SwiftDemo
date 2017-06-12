@@ -11,20 +11,20 @@ import UIKit
 class HomeViewController: BaseViewController ,UITableViewDelegate,UITableViewDataSource {
 
     
-    let tabView = UITableView.init(frame: CGRect.init(x: 0, y: 0, width: kScreenWidth, height: kScreenHeight-(44)), style: UITableViewStyle.grouped)
+    let tabView = UITableView.init(frame: CGRect.init(x: 0, y: 0, width: kScreenWidth, height: kScreenHeight), style: UITableViewStyle.grouped)
     
     let dataArr = ["java","object","swift"];
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         tabView.dataSource = self;
         tabView.delegate = self;
         
-        let imageV = UIImageView.init(frame: CGRect.init(x: 0, y: 0, width: kScreenWidth, height: kScreenWidth))
-        imageV.image = UIImage.init(named: "IMG_3076")
+        let headImageV = UIImageView.init(frame: CGRect.init(x: 0, y: 0, width: kScreenWidth, height: kScreenWidth))
+        headImageV.image = UIImage.gif(name: "load0")
         
-        tabView.tableHeaderView = imageV
+        tabView.tableHeaderView = headImageV
+        
         
         view.addSubview(tabView);
         

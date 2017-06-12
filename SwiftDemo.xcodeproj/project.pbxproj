@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11D88BCD1EEE77090066EABA /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D88BCC1EEE77090066EABA /* UIImage+Gif.swift */; };
+		11D88BD01EEE778D0066EABA /* load0.gif in Resources */ = {isa = PBXBuildFile; fileRef = 11D88BCF1EEE778D0066EABA /* load0.gif */; };
 		5E20A1361EE145890035AC56 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E20A1351EE145890035AC56 /* ProductViewController.swift */; };
 		5E20A1381EE15E1F0035AC56 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E20A1371EE15E1F0035AC56 /* UIViewExtension.swift */; };
 		5E2AC69C1EE0FFDB00E0B0CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2AC69B1EE0FFDB00E0B0CC /* ViewController.swift */; };
@@ -41,6 +43,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11D88BCC1EEE77090066EABA /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
+		11D88BCF1EEE778D0066EABA /* load0.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = load0.gif; sourceTree = "<group>"; };
 		5E20A1351EE145890035AC56 /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		5E20A1371EE15E1F0035AC56 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		5E2AC6961EE0FFDB00E0B0CC /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +91,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11D88BCE1EEE77860066EABA /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				11D88BCF1EEE778D0066EABA /* load0.gif */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
 		5E2AC68D1EE0FFDB00E0B0CC = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +118,7 @@
 		5E2AC6981EE0FFDB00E0B0CC /* SwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				11D88BCE1EEE77860066EABA /* Files */,
 				5E7D193D1EEA37490067FFF4 /* ThirdParty */,
 				5E2AC6BB1EE1357700E0B0CC /* Other */,
 				5E2AC6B61EE1344000E0B0CC /* Model */,
@@ -171,6 +184,7 @@
 				5E9EB1D31EE4F0AD0042DDB0 /* JWScrollView.swift */,
 				5E37A6A71EE52B08007148C5 /* JWScrollviewCell.swift */,
 				5E7D193B1EEA32D50067FFF4 /* NSMutableAttributedString+Extension.swift */,
+				11D88BCC1EEE77090066EABA /* UIImage+Gif.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -291,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E2AC6A41EE0FFDB00E0B0CC /* LaunchScreen.storyboard in Resources */,
+				11D88BD01EEE778D0066EABA /* load0.gif in Resources */,
 				5E2AC6A11EE0FFDB00E0B0CC /* Assets.xcassets in Resources */,
 				5E2AC69F1EE0FFDB00E0B0CC /* Main.storyboard in Resources */,
 			);
@@ -331,6 +346,7 @@
 				5E7D194B1EEA375D0067FFF4 /* Reflect+ArcFile.swift in Sources */,
 				5E37A6BC1EE6A795007148C5 /* MainNavViewController.swift in Sources */,
 				5E7D19511EEA375D0067FFF4 /* Reflect+Type.swift in Sources */,
+				11D88BCD1EEE77090066EABA /* UIImage+Gif.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
