@@ -20,6 +20,12 @@ class HomeViewController: BaseViewController ,UITableViewDelegate,UITableViewDat
         super.viewDidLoad()
         tabView.dataSource = self;
         tabView.delegate = self;
+        
+        let imageV = UIImageView.init(frame: CGRect.init(x: 0, y: 0, width: kScreenWidth, height: kScreenWidth))
+        imageV.image = UIImage.init(named: "IMG_3076")
+        
+        tabView.tableHeaderView = imageV
+        
         view.addSubview(tabView);
         
     }
