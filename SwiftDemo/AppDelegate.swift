@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,CAAnimationDelegate {
 
     var blueView = UIView()
     
-    var color = UIColor.red.cgColor
+    var color = UIColor.clear.cgColor
     
 
 
