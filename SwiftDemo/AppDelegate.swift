@@ -9,9 +9,14 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate,CAAnimationDelegate {
 
     var window: UIWindow?
+
+    var blueView = UIView()
+    
+    var color = UIColor.red.cgColor
+    
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -22,11 +27,48 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.layer.cornerRadius = 10;
         
         self.window?.clipsToBounds = true;
+        
+        delay(0.5,task: {
+            self.blueView.isUserInteractionEnabled = false;
+            self.blueView.layer.cornerRadius = 10;
+            self.blueView.layer.borderColor = self.color
+            self.blueView.layer.borderWidth = 3;
+            self.blueView.layer.masksToBounds = true
+            self.blueView.clipsToBounds = true;
+            self.blueView.frame = CGRect.init(x: 0, y: 0, width: kScreenWidth, height: kScreenHeight)
+            self.blueView.backgroundColor = UIColor.clear
+            UIApplication.shared.keyWindow?.addSubview(self.blueView)
+        })
+        
+        // 创建定时器
+        let timer:Timer = Timer(timeInterval: 2.0,
+                                    target: self,
+                                    selector: #selector(updateTimer),
+                                    userInfo: nil,
+                                    repeats: true)
+        
+        // 将定时器添加到运行循环
+        RunLoop.current.add(timer, forMode: RunLoopMode.commonModes)
 
+        
         return true
         
     }
+    
+    
+    func updateTimer(){
 
+        let colorAnim = CABasicAnimation(keyPath: "borderColor")
+        colorAnim.fromValue = UIColor.clear.cgColor
+        colorAnim.toValue = getRandomColor().cgColor
+        colorAnim.autoreverses = true
+        colorAnim.repeatCount = Float.infinity
+        colorAnim.duration = 1
+        colorAnim.delegate = self;
+        self.blueView.layer.add(colorAnim, forKey: "colorAnim")
+
+    }
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.

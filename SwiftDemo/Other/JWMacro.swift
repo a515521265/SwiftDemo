@@ -20,3 +20,14 @@ typealias tapSelectRow = (NSInteger) -> ()
 typealias click = (Void) -> Void
 
 
+
+func getRandomColor() -> UIColor {
+    
+    let red = CGFloat(arc4random_uniform(255))/CGFloat(255.0)
+    let green = CGFloat( arc4random_uniform(255))/CGFloat(255.0)
+    let blue = CGFloat(arc4random_uniform(255))/CGFloat(255.0)
+    let colorRun = UIColor.init(red:red, green:green, blue:blue , alpha: 1)
+
+    return colorRun
+    
+}

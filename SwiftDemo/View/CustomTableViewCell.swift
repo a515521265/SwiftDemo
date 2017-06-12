@@ -31,13 +31,8 @@ class CustomTableViewCell: UITableViewCell {
             let b = i % 5
             
             let colorV = UIImageView.init(frame: CGRect.init(x: CGFloat(Float(b)) * kScreenWidth / 5, y: (CGFloat(Float(a)) * kScreenWidth / 5), width: kScreenWidth / 5, height: kScreenWidth / 5))
-            
-            let red = CGFloat(arc4random_uniform(255))/CGFloat(255.0)
-            let green = CGFloat( arc4random_uniform(255))/CGFloat(255.0)
-            let blue = CGFloat(arc4random_uniform(255))/CGFloat(255.0)
-            let colorRun = UIColor.init(red:red, green:green, blue:blue , alpha: 1)
             colorV.image = UIImage.init(named: "github")
-            colorV.backgroundColor = colorRun
+            colorV.backgroundColor = getRandomColor()
             colorV.isUserInteractionEnabled = true
             colorV.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(callback)))
             
