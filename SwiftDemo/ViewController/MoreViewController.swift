@@ -10,8 +10,23 @@ import UIKit
 
 class MoreViewController: BaseViewController {
 
+    
+    var scrollerView = JWScrollView.init(frame: CGRect.init(x: 0, y: 0, width: kScreenWidth, height: kScreenHeight))
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.scrollerView.showsVerticalScrollIndicator = false;
+        self.scrollerView.showsVerticalScrollIndicator = false;
+        self.scrollerView.showsHorizontalScrollIndicator = false;
+        self.scrollerView.isPagingEnabled = true;
+        self.scrollerView.delaysContentTouches = false;
+        self.scrollerView.contentSize = CGSize.init(width: kScreenWidth * 4, height: 0)
+
 
         //背景图片
         let backgroundImgV = UIImageView.init(frame: CGRect.init(x: 0, y: 0, width: kScreenWidth, height: kScreenHeight))
@@ -34,6 +49,52 @@ class MoreViewController: BaseViewController {
         sun.image = UIImage.init(named: "0")
         sun.layer.add(viewRotateAnimation(toVlaue: kScreenWidth, duration: 30), forKey: nil)
         backgroundImgV.addSubview(sun)
+        
+        
+        
+        let apps = ["QQ","微信","膜拜单车","QQ","微信","膜拜单车","QQ","微信","膜拜单车"]
+        
+        
+        
+        
+        for i in 0...3 {
+            
+            let views = UIView.init(frame: CGRect.init(x:CGFloat(i) * kScreenWidth , y: 0, width: kScreenWidth, height: kScreenHeight))
+//                views.backgroundColor = getRandomColor()
+//            views.alpha = 0.2
+            self.scrollerView.addSubview(views)
+            
+            for (i,_) in apps.enumerated(){
+                
+                let a = i / 4
+                
+                let b = i % 4
+                
+                let colorV = UIImageView.init(frame: CGRect.init(x: CGFloat(Float(b)) * kScreenWidth / 4, y: 20+(CGFloat(Float(a)) * kScreenWidth / 4), width: kScreenWidth / 4, height: kScreenWidth / 4))
+                
+                let imageV = UIImageView.init(frame: CGRect.init(x: 25, y: 15, width: colorV.width-50, height: colorV.width-50))
+                imageV.image = UIImage.init(named: "github")
+                colorV.addSubview(imageV)
+                
+                let titleLba = UILabel.init(frame: CGRect.init(x: 0, y: imageV.bottom, width: colorV.width, height: 20))
+                titleLba.text = apps[i]
+                titleLba.textAlignment = .center
+                titleLba.font = UIFont.systemFont(ofSize: 12)
+                colorV.addSubview(titleLba)
+                
+                colorV.isUserInteractionEnabled = true
+                views.addSubview(colorV)
+                
+            }
+
+            
+            
+            
+            
+        }
+        
+        self.view.addSubview(self.scrollerView)
+        
         
         
         
