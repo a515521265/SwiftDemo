@@ -21,7 +21,8 @@ class HomeViewController: BaseViewController ,UITableViewDelegate,UITableViewDat
         tabView.delegate = self;
         
         let headImageV = UIImageView.init(frame: CGRect.init(x: 0, y: 0, width: kScreenWidth, height: kScreenWidth))
-        headImageV.image = UIImage.gif(name: "load0")
+//        headImageV.image = UIImage.gif(name: "load0")
+        headImageV.image = UIImage.init(named: "IMG_3076")
         
         let image2 = UIImageView.init(frame: headImageV.frame)
         image2.image = UIImage.init(named: "ele_sunnySunshine")
