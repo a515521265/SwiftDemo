@@ -10,7 +10,7 @@ import UIKit
 
 class FindViewController: BaseViewController,UITableViewDelegate,UITableViewDataSource {
 
-    let tabView = UITableView.init(frame: CGRect.init(x: 0, y: 0, width: kScreenWidth, height: kScreenHeight-(44)), style: UITableViewStyle.grouped)
+    let tabView = UITableView.init(frame: CGRect.init(x: 0, y: 0, width: kScreenWidth, height: kScreenHeight), style: UITableViewStyle.grouped)
     
     var dataArr = Array<CustomCellModel>()
     

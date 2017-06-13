@@ -11,7 +11,7 @@ import UIKit
 class AccountViewController: BaseViewController,UITableViewDelegate,UITableViewDataSource {
 
     
-    var tabView = UITableView.init(frame: CGRect.init(x: 0, y: 0, width: kScreenWidth, height: kScreenHeight-(44)), style: UITableViewStyle.grouped)
+    var tabView = UITableView.init(frame: CGRect.init(x: 0, y: 0, width: kScreenWidth, height: kScreenHeight), style: UITableViewStyle.grouped)
     
     var dataArr = Array<FriendModel>();
     

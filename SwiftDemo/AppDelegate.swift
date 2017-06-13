@@ -50,13 +50,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate,CAAnimationDelegate {
         // 将定时器添加到运行循环
         RunLoop.current.add(timer, forMode: RunLoopMode.commonModes)
 
-        
-        
-        
-        let sin = Single.shared
-        
-        print("appdelegate---name" + sin.name!)
-        
         return true
         
     }

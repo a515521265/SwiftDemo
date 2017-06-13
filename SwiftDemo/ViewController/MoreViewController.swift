@@ -14,6 +14,17 @@ class MoreViewController: BaseViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+//        self.view.backgroundColor
+        
+        let backgroundImgV = UIImageView.init(frame: CGRect.init(x: 0, y: 0, width: kScreenWidth, height: kScreenHeight))
+        
+        backgroundImgV.image = UIImage.init(named: "bg_fog_day")
+        
+        self.view.addSubview(backgroundImgV)
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
