@@ -21,7 +21,7 @@ class ProductViewController: BaseViewController ,CirCleViewDelegate{
         sv.keyboardDismissMode = UIScrollViewKeyboardDismissMode.onDrag
         sv.backgroundColor = UIColor.groupTableViewBackground
 //        sv.topPaddingHeight = 10
-        sv.bounces = false;
+//        sv.bounces = false;
         return sv;
         
     }()
@@ -57,6 +57,32 @@ class ProductViewController: BaseViewController ,CirCleViewDelegate{
             arr.append(cells);
         }
         self.scrollerView.setScrollerviewSubViewsArr(views: arr)
+        
+        
+        
+        let footer = RHRefreshFooter(refreshScrollView: scrollerView)
+        footer.refreshHandler = {
+            
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3.0) {
+
+                footer.endRefresh()
+
+                    footer.hasMoreData = false
+                
+            }
+            
+        }
+        
+        let header = RHRefreshHeader(refreshScrollView: scrollerView)
+        header.refreshHandler = {
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3.0) {
+
+                header.endRefresh()
+                
+                footer.hasMoreData = true
+            }
+        }
+        header.beginRefresh()
         
         
         

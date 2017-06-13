@@ -75,6 +75,9 @@
 		117CB7581EEF8B9A0044A3C8 /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = 117CB7141EEF8B9A0044A3C8 /* 8.png */; };
 		117CB7591EEF8B9A0044A3C8 /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = 117CB7151EEF8B9A0044A3C8 /* 9.png */; };
 		117CB75A1EEF8B9A0044A3C8 /* 99.png in Resources */ = {isa = PBXBuildFile; fileRef = 117CB7161EEF8B9A0044A3C8 /* 99.png */; };
+		117CB76C1EEFC3400044A3C8 /* arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 117CB7691EEFC3400044A3C8 /* arrow@2x.png */; };
+		117CB76D1EEFC3400044A3C8 /* RHRefreshFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117CB76A1EEFC3400044A3C8 /* RHRefreshFooter.swift */; };
+		117CB76E1EEFC3400044A3C8 /* RHRefreshHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117CB76B1EEFC3400044A3C8 /* RHRefreshHeader.swift */; };
 		11D88BCD1EEE77090066EABA /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D88BCC1EEE77090066EABA /* UIImage+Gif.swift */; };
 		11D88BD01EEE778D0066EABA /* load0.gif in Resources */ = {isa = PBXBuildFile; fileRef = 11D88BCF1EEE778D0066EABA /* load0.gif */; };
 		11D88BD21EEE7A070066EABA /* Single.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D88BD11EEE7A070066EABA /* Single.swift */; };
@@ -180,6 +183,9 @@
 		117CB7141EEF8B9A0044A3C8 /* 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8.png; sourceTree = "<group>"; };
 		117CB7151EEF8B9A0044A3C8 /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9.png; sourceTree = "<group>"; };
 		117CB7161EEF8B9A0044A3C8 /* 99.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 99.png; sourceTree = "<group>"; };
+		117CB7691EEFC3400044A3C8 /* arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow@2x.png"; sourceTree = "<group>"; };
+		117CB76A1EEFC3400044A3C8 /* RHRefreshFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHRefreshFooter.swift; sourceTree = "<group>"; };
+		117CB76B1EEFC3400044A3C8 /* RHRefreshHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHRefreshHeader.swift; sourceTree = "<group>"; };
 		11D88BCC1EEE77090066EABA /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
 		11D88BCF1EEE778D0066EABA /* load0.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = load0.gif; sourceTree = "<group>"; };
 		11D88BD11EEE7A070066EABA /* Single.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Single.swift; sourceTree = "<group>"; };
@@ -311,6 +317,16 @@
 			path = WeatherIcon;
 			sourceTree = "<group>";
 		};
+		117CB7681EEFC3400044A3C8 /* RHRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				117CB7691EEFC3400044A3C8 /* arrow@2x.png */,
+				117CB76A1EEFC3400044A3C8 /* RHRefreshFooter.swift */,
+				117CB76B1EEFC3400044A3C8 /* RHRefreshHeader.swift */,
+			);
+			path = RHRefresh;
+			sourceTree = "<group>";
+		};
 		11D88BCE1EEE77860066EABA /* Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -415,6 +431,7 @@
 		5E7D193D1EEA37490067FFF4 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				117CB7681EEFC3400044A3C8 /* RHRefresh */,
 				5E7D193E1EEA375D0067FFF4 /* Reflect */,
 			);
 			path = ThirdParty;
@@ -544,6 +561,7 @@
 				117CB71B1EEF8B9A0044A3C8 /* ele_sunnyBird5.png in Resources */,
 				117CB72A1EEF8B9A0044A3C8 /* ele_sunnyNightMeteor1.png in Resources */,
 				117CB7381EEF8B9A0044A3C8 /* 13.png in Resources */,
+				117CB76C1EEFC3400044A3C8 /* arrow@2x.png in Resources */,
 				117CB7501EEF8B9A0044A3C8 /* 35.png in Resources */,
 				117CB7321EEF8B9A0044A3C8 /* ele_sunnySunshine.png in Resources */,
 				117CB75A1EEF8B9A0044A3C8 /* 99.png in Resources */,
@@ -609,7 +627,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				117CB76D1EEFC3400044A3C8 /* RHRefreshFooter.swift in Sources */,
 				5E7D194F1EEA375D0067FFF4 /* Reflect+Other.swift in Sources */,
+				117CB76E1EEFC3400044A3C8 /* RHRefreshHeader.swift in Sources */,
 				5EB5FAD31EE8DEF7002CC6A2 /* ShowAlertViewController.swift in Sources */,
 				5E2AC6B21EE133CD00E0B0CC /* BaseViewController.swift in Sources */,
 				5E9EB1D41EE4F0AD0042DDB0 /* JWScrollView.swift in Sources */,
