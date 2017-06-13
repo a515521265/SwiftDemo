@@ -25,7 +25,7 @@ class MoreViewController: BaseViewController {
         
         
         
-        let birdImageView  = UIImageView.init(frame: CGRect.init(x: 0, y: kScreenWidth * 0.25, width: 70, height: 52))
+        let birdImageView  = UIImageView.init(frame: CGRect.init(x: 0, y: kScreenWidth * 0.8, width: 70/2, height: 52/2))
         
         birdImageView.animationImages = self.birdImages
         birdImageView.animationRepeatCount = 0

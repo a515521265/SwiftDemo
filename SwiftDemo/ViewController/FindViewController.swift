@@ -59,6 +59,7 @@ class FindViewController: BaseViewController,UITableViewDelegate,UITableViewData
         cell?.setcellModel(model: dataArr[indexPath.row])
         cell?.textLabel?.textColor = UIColor.black
         cell?.selectionStyle = UITableViewCellSelectionStyle.none
+        cell?.backgroundColor = UIColor.groupTableViewBackground
         cell?.tapCell = {(imagev) in
             let showVC = ShowAlertViewController()
             showVC.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
