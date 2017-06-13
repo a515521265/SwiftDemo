@@ -35,10 +35,8 @@ class HomeViewController: BaseViewController ,UITableViewDelegate,UITableViewDat
         
         
         let sin = Single.shared
-        
         sin.name = "keys"
-        
-        print("homeVC------name"+sin.name!)
+//        print("homeVC------name"+sin.name!)
         
         
     }
