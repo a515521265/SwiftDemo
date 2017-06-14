@@ -86,6 +86,8 @@ class MoreViewController: BaseViewController ,UIScrollViewDelegate {
                 
                 let imageV = UIImageView.init(frame: CGRect.init(x: (backgroundV.width - imageW)/2, y: 15, width: imageW, height: imageW))
                 imageV.image = it.icon
+                imageV.isUserInteractionEnabled = true
+                imageV.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tapApp)))
                 backgroundV.addSubview(imageV)
                 
                 let titleLba = UILabel.init(frame: CGRect.init(x: 0, y: imageV.bottom, width: backgroundV.width, height: 20))
@@ -150,6 +152,34 @@ class MoreViewController: BaseViewController ,UIScrollViewDelegate {
         }
         return images
     }()
+    
+    
+    func tapApp(tap:UIGestureRecognizer)  {
+        
+        for (_,item) in (tap.view?.superview?.subviews.enumerated())! {
+            
+            if item is UILabel {
+             
+                var lab = UILabel()
+                
+                lab = item as! UILabel;
+            
+                print(lab.text ?? "")
+                
+                for (_,it) in self.applications.enumerated() {
+                    
+                    if lab.text == it.name {
+                        SystemApplicationManager.sharedManager.openApplication(it)
+                        break
+                    }
+                    
+                }
+                
+            }
+            
+        }
+
+    }
     
     
     //scrollview代理

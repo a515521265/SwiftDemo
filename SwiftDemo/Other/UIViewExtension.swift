@@ -84,8 +84,6 @@ extension UIView {
 //    
 //    public var singleTapEvent = singleTapEvent1()
     
-    
-    
     // x
     var x : CGFloat {
         
