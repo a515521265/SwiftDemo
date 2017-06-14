@@ -78,9 +78,13 @@ class MoreViewController: BaseViewController ,UIScrollViewDelegate {
                 
                 let b = i % 4
                 
-                let backgroundVW = kScreenWidth / 3.8
                 
-                let backgroundV = UIImageView.init(frame: CGRect.init(x: CGFloat(Float(b)) * kScreenWidth / 4, y: 20+(CGFloat(Float(a)) * backgroundVW), width: kScreenWidth / 4, height: backgroundVW))
+                
+                let backgroundVH = kScreenWidth / 3.8
+                
+                let backgroundVW = (kScreenWidth - 20) / 4
+                
+                let backgroundV = UIImageView.init(frame: CGRect.init(x: 10 + CGFloat(Float(b)) * backgroundVW, y: 20+(CGFloat(Float(a)) * backgroundVH), width: backgroundVW, height: backgroundVH))
                 
                 let imageW = backgroundV.width-30;
                 
