@@ -84,6 +84,9 @@
 		117CB79C1EF0D3DC0044A3C8 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117CB7961EF0D3DC0044A3C8 /* MainTabBarViewController.swift */; };
 		117CB79D1EF0D3DC0044A3C8 /* ShowAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117CB7971EF0D3DC0044A3C8 /* ShowAlertViewController.swift */; };
 		117CB79E1EF0D3DC0044A3C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117CB7981EF0D3DC0044A3C8 /* ViewController.swift */; };
+		117CB7AA1EF0D5100044A3C8 /* SystemApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117CB7A31EF0D5100044A3C8 /* SystemApplication.swift */; };
+		117CB7AB1EF0D5100044A3C8 /* SystemApplicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117CB7A41EF0D5100044A3C8 /* SystemApplicationManager.swift */; };
+		117CB7AE1EF0D53B0044A3C8 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 117CB7AD1EF0D53B0044A3C8 /* MobileCoreServices.framework */; };
 		11D88BCD1EEE77090066EABA /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D88BCC1EEE77090066EABA /* UIImage+Gif.swift */; };
 		11D88BD01EEE778D0066EABA /* load0.gif in Resources */ = {isa = PBXBuildFile; fileRef = 11D88BCF1EEE778D0066EABA /* load0.gif */; };
 		11D88BD21EEE7A070066EABA /* Single.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D88BD11EEE7A070066EABA /* Single.swift */; };
@@ -193,6 +196,14 @@
 		117CB7971EF0D3DC0044A3C8 /* ShowAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowAlertViewController.swift; sourceTree = "<group>"; };
 		117CB7981EF0D3DC0044A3C8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		117CB79F1EF0D4290044A3C8 /* SwiftDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		117CB7A31EF0D5100044A3C8 /* SystemApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemApplication.swift; sourceTree = "<group>"; };
+		117CB7A41EF0D5100044A3C8 /* SystemApplicationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemApplicationManager.swift; sourceTree = "<group>"; };
+		117CB7A51EF0D5100044A3C8 /* LSApplicationProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSApplicationProxy.h; sourceTree = "<group>"; };
+		117CB7A61EF0D5100044A3C8 /* LSApplicationWorkspace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSApplicationWorkspace.h; sourceTree = "<group>"; };
+		117CB7A71EF0D5100044A3C8 /* LSBundleProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSBundleProxy.h; sourceTree = "<group>"; };
+		117CB7A81EF0D5100044A3C8 /* LSResourceProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSResourceProxy.h; sourceTree = "<group>"; };
+		117CB7A91EF0D5100044A3C8 /* UIImage-ApplicationIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage-ApplicationIcons.h"; sourceTree = "<group>"; };
+		117CB7AD1EF0D53B0044A3C8 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		11D88BCC1EEE77090066EABA /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
 		11D88BCF1EEE778D0066EABA /* load0.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = load0.gif; sourceTree = "<group>"; };
 		11D88BD11EEE7A070066EABA /* Single.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Single.swift; sourceTree = "<group>"; };
@@ -230,6 +241,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				117CB7AE1EF0D53B0044A3C8 /* MobileCoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +343,13 @@
 		117CB7911EF0D37E0044A3C8 /* GetAppList */ = {
 			isa = PBXGroup;
 			children = (
+				117CB7A31EF0D5100044A3C8 /* SystemApplication.swift */,
+				117CB7A41EF0D5100044A3C8 /* SystemApplicationManager.swift */,
+				117CB7A51EF0D5100044A3C8 /* LSApplicationProxy.h */,
+				117CB7A61EF0D5100044A3C8 /* LSApplicationWorkspace.h */,
+				117CB7A71EF0D5100044A3C8 /* LSBundleProxy.h */,
+				117CB7A81EF0D5100044A3C8 /* LSResourceProxy.h */,
+				117CB7A91EF0D5100044A3C8 /* UIImage-ApplicationIcons.h */,
 			);
 			path = GetAppList;
 			sourceTree = "<group>";
@@ -349,6 +368,14 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		117CB7AC1EF0D53B0044A3C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				117CB7AD1EF0D53B0044A3C8 /* MobileCoreServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		11D88BCE1EEE77860066EABA /* Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -364,6 +391,7 @@
 			children = (
 				5E2AC6981EE0FFDB00E0B0CC /* SwiftDemo */,
 				5E2AC6971EE0FFDB00E0B0CC /* Products */,
+				117CB7AC1EF0D53B0044A3C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -649,11 +677,13 @@
 				5E7D19541EEA379F0067FFF4 /* FriendModel.swift in Sources */,
 				5E7D19561EEA39E40067FFF4 /* AccountViewController.swift in Sources */,
 				5E7D194C1EEA375D0067FFF4 /* Reflect+Parse.swift in Sources */,
+				117CB7AA1EF0D5100044A3C8 /* SystemApplication.swift in Sources */,
 				5E37A6B01EE6846B007148C5 /* FindViewController.swift in Sources */,
 				5E20A1381EE15E1F0035AC56 /* UIViewExtension.swift in Sources */,
 				11D88BD21EEE7A070066EABA /* Single.swift in Sources */,
 				117CB79E1EF0D3DC0044A3C8 /* ViewController.swift in Sources */,
 				5E37A6AE1EE65683007148C5 /* CirCleView.swift in Sources */,
+				117CB7AB1EF0D5100044A3C8 /* SystemApplicationManager.swift in Sources */,
 				117CB79D1EF0D3DC0044A3C8 /* ShowAlertViewController.swift in Sources */,
 				5E37A6B21EE684F0007148C5 /* CustomTableViewCell.swift in Sources */,
 				5E7D193C1EEA32D50067FFF4 /* NSMutableAttributedString+Extension.swift in Sources */,

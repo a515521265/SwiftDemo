@@ -14,7 +14,7 @@ class MoreViewController: BaseViewController {
     var scrollerView = JWScrollView.init(frame: CGRect.init(x: 0, y: 0, width: kScreenWidth, height: kScreenHeight))
     
     
-    
+    var applications: [SystemApplication] = []
     
     
     override func viewDidLoad() {
@@ -52,7 +52,11 @@ class MoreViewController: BaseViewController {
         
         
         
-        let apps = ["QQ","微信","膜拜单车","QQ","微信","膜拜单车","QQ","微信","膜拜单车"]
+        // Get all apps installed on the device
+        self.applications = SystemApplicationManager.sharedManager.allInstalledApplications()
+        
+        
+//        let apps = ["QQ","微信","膜拜单车","QQ","微信","膜拜单车","QQ","微信","膜拜单车"]
         
         
         
@@ -60,11 +64,9 @@ class MoreViewController: BaseViewController {
         for i in 0...3 {
             
             let views = UIView.init(frame: CGRect.init(x:CGFloat(i) * kScreenWidth , y: 0, width: kScreenWidth, height: kScreenHeight))
-//                views.backgroundColor = getRandomColor()
-//            views.alpha = 0.2
             self.scrollerView.addSubview(views)
             
-            for (i,_) in apps.enumerated(){
+            for (i,_) in self.applications.enumerated(){
                 
                 let a = i / 4
                 
@@ -73,11 +75,11 @@ class MoreViewController: BaseViewController {
                 let colorV = UIImageView.init(frame: CGRect.init(x: CGFloat(Float(b)) * kScreenWidth / 4, y: 20+(CGFloat(Float(a)) * kScreenWidth / 4), width: kScreenWidth / 4, height: kScreenWidth / 4))
                 
                 let imageV = UIImageView.init(frame: CGRect.init(x: 25, y: 15, width: colorV.width-50, height: colorV.width-50))
-                imageV.image = UIImage.init(named: "github")
+                imageV.image = self.applications[i].icon
                 colorV.addSubview(imageV)
                 
                 let titleLba = UILabel.init(frame: CGRect.init(x: 0, y: imageV.bottom, width: colorV.width, height: 20))
-                titleLba.text = apps[i]
+                titleLba.text = self.applications[i].name
                 titleLba.textAlignment = .center
                 titleLba.font = UIFont.systemFont(ofSize: 12)
                 colorV.addSubview(titleLba)
