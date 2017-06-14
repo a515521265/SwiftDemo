@@ -78,21 +78,25 @@ class MoreViewController: BaseViewController ,UIScrollViewDelegate {
                 
                 let b = i % 4
                 
-                let colorV = UIImageView.init(frame: CGRect.init(x: CGFloat(Float(b)) * kScreenWidth / 4, y: 20+(CGFloat(Float(a)) * kScreenWidth / 4), width: kScreenWidth / 4, height: kScreenWidth / 4))
+                let backgroundVW = kScreenWidth / 3.8
                 
-                let imageV = UIImageView.init(frame: CGRect.init(x: 25, y: 15, width: colorV.width-50, height: colorV.width-50))
+                let backgroundV = UIImageView.init(frame: CGRect.init(x: CGFloat(Float(b)) * kScreenWidth / 4, y: 20+(CGFloat(Float(a)) * backgroundVW), width: kScreenWidth / 4, height: backgroundVW))
+                
+                let imageW = backgroundV.width-30;
+                
+                let imageV = UIImageView.init(frame: CGRect.init(x: (backgroundV.width - imageW)/2, y: 15, width: imageW, height: imageW))
                 imageV.image = it.icon
-                colorV.addSubview(imageV)
+                backgroundV.addSubview(imageV)
                 
-                let titleLba = UILabel.init(frame: CGRect.init(x: 0, y: imageV.bottom, width: colorV.width, height: 20))
+                let titleLba = UILabel.init(frame: CGRect.init(x: 0, y: imageV.bottom, width: backgroundV.width, height: 20))
                 titleLba.text = it.name
                 titleLba.textAlignment = .center
-                titleLba.font = UIFont.systemFont(ofSize: 12)
+                titleLba.font = UIFont.systemFont(ofSize: 11)
                 titleLba.textColor = UIColor.white
-                colorV.addSubview(titleLba)
+                backgroundV.addSubview(titleLba)
                 
-                colorV.isUserInteractionEnabled = true
-                views.addSubview(colorV)
+                backgroundV.isUserInteractionEnabled = true
+                views.addSubview(backgroundV)
                 
             }
 
