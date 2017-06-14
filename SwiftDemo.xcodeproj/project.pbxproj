@@ -114,6 +114,7 @@
 		5E7D19541EEA379F0067FFF4 /* FriendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7D19531EEA379F0067FFF4 /* FriendModel.swift */; };
 		5E7D19561EEA39E40067FFF4 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7D19551EEA39E40067FFF4 /* AccountViewController.swift */; };
 		5E7D195E1EEA8ABB0067FFF4 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7D195D1EEA8ABB0067FFF4 /* MoreViewController.swift */; };
+		5E9DDFC51EF0D72400CDE067 /* PublicOCFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E9DDFC41EF0D72400CDE067 /* PublicOCFunc.m */; };
 		5E9EB1D41EE4F0AD0042DDB0 /* JWScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9EB1D31EE4F0AD0042DDB0 /* JWScrollView.swift */; };
 /* End PBXBuildFile section */
 
@@ -233,6 +234,8 @@
 		5E7D19531EEA379F0067FFF4 /* FriendModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendModel.swift; sourceTree = "<group>"; };
 		5E7D19551EEA39E40067FFF4 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		5E7D195D1EEA8ABB0067FFF4 /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		5E9DDFC31EF0D72400CDE067 /* PublicOCFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicOCFunc.h; sourceTree = "<group>"; };
+		5E9DDFC41EF0D72400CDE067 /* PublicOCFunc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicOCFunc.m; sourceTree = "<group>"; };
 		5E9EB1D31EE4F0AD0042DDB0 /* JWScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -461,6 +464,8 @@
 				5E7D193B1EEA32D50067FFF4 /* NSMutableAttributedString+Extension.swift */,
 				11D88BCC1EEE77090066EABA /* UIImage+Gif.swift */,
 				11D88BD11EEE7A070066EABA /* Single.swift */,
+				5E9DDFC31EF0D72400CDE067 /* PublicOCFunc.h */,
+				5E9DDFC41EF0D72400CDE067 /* PublicOCFunc.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -681,6 +686,7 @@
 				5E37A6B01EE6846B007148C5 /* FindViewController.swift in Sources */,
 				5E20A1381EE15E1F0035AC56 /* UIViewExtension.swift in Sources */,
 				11D88BD21EEE7A070066EABA /* Single.swift in Sources */,
+				5E9DDFC51EF0D72400CDE067 /* PublicOCFunc.m in Sources */,
 				117CB79E1EF0D3DC0044A3C8 /* ViewController.swift in Sources */,
 				5E37A6AE1EE65683007148C5 /* CirCleView.swift in Sources */,
 				117CB7AB1EF0D5100044A3C8 /* SystemApplicationManager.swift in Sources */,
