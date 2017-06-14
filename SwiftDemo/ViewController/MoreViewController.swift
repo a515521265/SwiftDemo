@@ -8,13 +8,16 @@
 
 import UIKit
 
-class MoreViewController: BaseViewController {
+class MoreViewController: BaseViewController ,UIScrollViewDelegate {
 
     
     var scrollerView = JWScrollView.init(frame: CGRect.init(x: 0, y: 0, width: kScreenWidth, height: kScreenHeight))
     
     
     var applications: [SystemApplication] = []
+    
+    
+    var page = UIPageControl.init(frame: CGRect.init(x: 0, y: kScreenHeight-100, width: kScreenWidth, height: 30))
     
     
     override func viewDidLoad() {
@@ -26,6 +29,7 @@ class MoreViewController: BaseViewController {
         self.scrollerView.isPagingEnabled = true;
         self.scrollerView.delaysContentTouches = false;
         self.scrollerView.contentSize = CGSize.init(width: kScreenWidth * 4, height: 0)
+        self.scrollerView.delegate = self;
 
 
         //背景图片
@@ -84,6 +88,7 @@ class MoreViewController: BaseViewController {
                 titleLba.text = it.name
                 titleLba.textAlignment = .center
                 titleLba.font = UIFont.systemFont(ofSize: 12)
+                titleLba.textColor = UIColor.white
                 colorV.addSubview(titleLba)
                 
                 colorV.isUserInteractionEnabled = true
@@ -91,17 +96,16 @@ class MoreViewController: BaseViewController {
                 
             }
 
-            
-            
-            
-            
         }
+        
+        self.scrollerView.contentSize = CGSize.init(width: kScreenWidth * CGFloat(views.count) , height: 0)
         
         self.view.addSubview(self.scrollerView)
         
         
-        
-        
+
+        page.numberOfPages = views.count
+        self.view.addSubview(page)
         
         
     }
@@ -142,5 +146,12 @@ class MoreViewController: BaseViewController {
         }
         return images
     }()
+    
+    
+    //scrollview代理
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        self.page.currentPage = Int(scrollView.contentOffset.x / scrollView.bounds.size.width);
+    }
 
 }
