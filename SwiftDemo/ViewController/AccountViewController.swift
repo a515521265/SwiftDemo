@@ -87,21 +87,26 @@ class AccountViewController: BaseViewController,UITableViewDelegate,UITableViewD
         
         view.frame = CGRect.init(x: 0, y: 0, width: kScreenWidth, height: 50)
         
-        let lab = UILabel.init(frame: CGRect.init(x: 20, y: 0, width: kScreenWidth-40, height: 50))
+        let jwlab : JWLabel = JWLabel()
+        jwlab.frame = CGRect.init(x: 20, y: 0, width: kScreenWidth-40, height: 50);
         
         let dict = dataArr[section]
         
-        lab.text = dict.title
+        jwlab.labelAnotherColor = UIColor.gray
         
-        lab.font = UIFont.boldSystemFont(ofSize: 20)
+        jwlab.text = dict.title.appending("<(24/88)>")
         
-        lab.tag = section + 99
+        jwlab.canPerformCopyAction = true
         
-        lab.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(showCellList)))
+        jwlab.font = UIFont.boldSystemFont(ofSize: 20)
         
-        lab.isUserInteractionEnabled = true
+        jwlab.tag = section + 99
         
-        view.addSubview(lab)
+        jwlab.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(showCellList)))
+        
+        jwlab.isUserInteractionEnabled = true
+        
+        view.addSubview(jwlab)
         
         
         return view

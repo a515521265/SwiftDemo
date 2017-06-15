@@ -116,6 +116,7 @@
 		5E7D195E1EEA8ABB0067FFF4 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7D195D1EEA8ABB0067FFF4 /* MoreViewController.swift */; };
 		5E9DDFC51EF0D72400CDE067 /* PublicOCFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E9DDFC41EF0D72400CDE067 /* PublicOCFunc.m */; };
 		5E9EB1D41EE4F0AD0042DDB0 /* JWScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9EB1D31EE4F0AD0042DDB0 /* JWScrollView.swift */; };
+		5ED0993C1EF2242A0067960B /* JWLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED0993B1EF2242A0067960B /* JWLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -237,6 +238,9 @@
 		5E9DDFC31EF0D72400CDE067 /* PublicOCFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicOCFunc.h; sourceTree = "<group>"; };
 		5E9DDFC41EF0D72400CDE067 /* PublicOCFunc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicOCFunc.m; sourceTree = "<group>"; };
 		5E9EB1D31EE4F0AD0042DDB0 /* JWScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWScrollView.swift; sourceTree = "<group>"; };
+		5ED099391EF2242A0067960B /* JWKitMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWKitMacro.h; sourceTree = "<group>"; };
+		5ED0993A1EF2242A0067960B /* JWLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWLabel.h; sourceTree = "<group>"; };
+		5ED0993B1EF2242A0067960B /* JWLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -382,6 +386,7 @@
 		11D88BCE1EEE77860066EABA /* Files */ = {
 			isa = PBXGroup;
 			children = (
+				5ED099381EF223D90067960B /* ObjcTools */,
 				117CB6D11EEF8B9A0044A3C8 /* animation */,
 				117CB6EE1EEF8B9A0044A3C8 /* WeatherIcon */,
 				11D88BCF1EEE778D0066EABA /* load0.gif */,
@@ -525,6 +530,16 @@
 				5E7D19491EEA375D0067FFF4 /* Reflect+Type.swift */,
 			);
 			path = Reflect;
+			sourceTree = "<group>";
+		};
+		5ED099381EF223D90067960B /* ObjcTools */ = {
+			isa = PBXGroup;
+			children = (
+				5ED099391EF2242A0067960B /* JWKitMacro.h */,
+				5ED0993A1EF2242A0067960B /* JWLabel.h */,
+				5ED0993B1EF2242A0067960B /* JWLabel.m */,
+			);
+			path = ObjcTools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -700,6 +715,7 @@
 				5E7D19501EEA375D0067FFF4 /* Reflect+Property.swift in Sources */,
 				5E7D194D1EEA375D0067FFF4 /* Reflect+Convert.swift in Sources */,
 				5E7D19521EEA375D0067FFF4 /* Reflect.swift in Sources */,
+				5ED0993C1EF2242A0067960B /* JWLabel.m in Sources */,
 				117CB79B1EF0D3DC0044A3C8 /* MainNavViewController.swift in Sources */,
 				5E7D194B1EEA375D0067FFF4 /* Reflect+ArcFile.swift in Sources */,
 				5E7D19511EEA375D0067FFF4 /* Reflect+Type.swift in Sources */,

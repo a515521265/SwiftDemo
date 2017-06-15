@@ -13,7 +13,7 @@ class HomeViewController: BaseViewController ,UITableViewDelegate,UITableViewDat
     
     let tabView = UITableView.init(frame: CGRect.init(x: 0, y: 0, width: kScreenWidth, height: kScreenHeight), style: UITableViewStyle.grouped)
     
-    let dataArr = ["java","object","swift"];
+    let dataArr = ["Java","Object-C","Swift","Html","Css","JavaScript"];
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +27,7 @@ class HomeViewController: BaseViewController ,UITableViewDelegate,UITableViewDat
         let image2 = UIImageView.init(frame: headImageV.frame)
         image2.image = UIImage.init(named: "ele_sunnySunshine")
         
-        headImageV.addSubview(image2);
+//        headImageV.addSubview(image2);
         
         tabView.tableHeaderView = headImageV
         
