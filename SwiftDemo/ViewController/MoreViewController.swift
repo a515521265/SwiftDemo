@@ -110,6 +110,7 @@ class MoreViewController: BaseViewController ,UIScrollViewDelegate {
             self.scrollerView.contentSize = CGSize.init(width: kScreenWidth * CGFloat(views.count) , height: 0)
             self.view.addSubview(self.scrollerView)
             self.page.numberOfPages = views.count
+            self.page.addTarget(self, action: #selector(self.pageTurn), for: UIControlEvents.valueChanged)
             self.view.addSubview(self.page)
 
             GiFHUD.dismiss()
@@ -191,4 +192,12 @@ class MoreViewController: BaseViewController ,UIScrollViewDelegate {
         self.page.currentPage = Int(scrollView.contentOffset.x / scrollView.bounds.size.width);
     }
 
+    func pageTurn(sender : UIPageControl){
+
+        self.scrollerView.setContentOffset(CGPoint.init(x: CGFloat(sender.currentPage) * viewSize.width, y: 0), animated: true)
+        
+    }
+    
+    
+    
 }
