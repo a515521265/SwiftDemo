@@ -193,6 +193,7 @@ class MoreViewController: BaseViewController ,UIScrollViewDelegate {
     }
 
     func pageTurn(sender : UIPageControl){
+        let viewSize = self.scrollerView.frame.size
 
         self.scrollerView.setContentOffset(CGPoint.init(x: CGFloat(sender.currentPage) * viewSize.width, y: 0), animated: true)
         
