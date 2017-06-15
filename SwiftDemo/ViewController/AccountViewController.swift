@@ -42,11 +42,11 @@ class AccountViewController: BaseViewController,UITableViewDelegate,UITableViewD
                ["title" : "高中同学",
                 "contentS" : ["吃吃吃","喝喝喝"],
                 "isShow" : false,
-                "headIcon" : "dinosaur"],
+                "headIcon" : "github1"],
                ["title" : "大学同学",
                 "contentS" : ["玩玩玩","乐乐乐"],
                 "isShow" : false,
-                "headIcon" : "github"]
+                "headIcon" : "github2"]
         ]
         
         for (_,item) in arr.enumerated() {
