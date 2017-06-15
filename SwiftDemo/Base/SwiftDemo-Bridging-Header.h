@@ -8,3 +8,4 @@
 
 #import "PublicOCFunc.h"
 #import "JWLabel.h"
+#import "GiFHUD.h"

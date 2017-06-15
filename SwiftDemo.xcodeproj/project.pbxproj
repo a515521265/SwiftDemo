@@ -87,6 +87,7 @@
 		117CB7AA1EF0D5100044A3C8 /* SystemApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117CB7A31EF0D5100044A3C8 /* SystemApplication.swift */; };
 		117CB7AB1EF0D5100044A3C8 /* SystemApplicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117CB7A41EF0D5100044A3C8 /* SystemApplicationManager.swift */; };
 		117CB7AE1EF0D53B0044A3C8 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 117CB7AD1EF0D53B0044A3C8 /* MobileCoreServices.framework */; };
+		11D218DA1EF22C290083C16F /* GiFHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D218D91EF22C290083C16F /* GiFHUD.m */; };
 		11D88BCD1EEE77090066EABA /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D88BCC1EEE77090066EABA /* UIImage+Gif.swift */; };
 		11D88BD01EEE778D0066EABA /* load0.gif in Resources */ = {isa = PBXBuildFile; fileRef = 11D88BCF1EEE778D0066EABA /* load0.gif */; };
 		11D88BD21EEE7A070066EABA /* Single.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D88BD11EEE7A070066EABA /* Single.swift */; };
@@ -206,6 +207,8 @@
 		117CB7A81EF0D5100044A3C8 /* LSResourceProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSResourceProxy.h; sourceTree = "<group>"; };
 		117CB7A91EF0D5100044A3C8 /* UIImage-ApplicationIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage-ApplicationIcons.h"; sourceTree = "<group>"; };
 		117CB7AD1EF0D53B0044A3C8 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		11D218D81EF22C290083C16F /* GiFHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiFHUD.h; sourceTree = "<group>"; };
+		11D218D91EF22C290083C16F /* GiFHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiFHUD.m; sourceTree = "<group>"; };
 		11D88BCC1EEE77090066EABA /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
 		11D88BCF1EEE778D0066EABA /* load0.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = load0.gif; sourceTree = "<group>"; };
 		11D88BD11EEE7A070066EABA /* Single.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Single.swift; sourceTree = "<group>"; };
@@ -538,6 +541,8 @@
 				5ED099391EF2242A0067960B /* JWKitMacro.h */,
 				5ED0993A1EF2242A0067960B /* JWLabel.h */,
 				5ED0993B1EF2242A0067960B /* JWLabel.m */,
+				11D218D81EF22C290083C16F /* GiFHUD.h */,
+				11D218D91EF22C290083C16F /* GiFHUD.m */,
 			);
 			path = ObjcTools;
 			sourceTree = "<group>";
@@ -718,6 +723,7 @@
 				5ED0993C1EF2242A0067960B /* JWLabel.m in Sources */,
 				117CB79B1EF0D3DC0044A3C8 /* MainNavViewController.swift in Sources */,
 				5E7D194B1EEA375D0067FFF4 /* Reflect+ArcFile.swift in Sources */,
+				11D218DA1EF22C290083C16F /* GiFHUD.m in Sources */,
 				5E7D19511EEA375D0067FFF4 /* Reflect+Type.swift in Sources */,
 				11D88BCD1EEE77090066EABA /* UIImage+Gif.swift in Sources */,
 				117CB79A1EF0D3DC0044A3C8 /* BaseViewController.swift in Sources */,

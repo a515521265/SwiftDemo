@@ -54,68 +54,67 @@ class MoreViewController: BaseViewController ,UIScrollViewDelegate {
         sun.layer.add(viewRotateAnimation(toVlaue: kScreenWidth, duration: 30), forKey: nil)
         backgroundImgV.addSubview(sun)
         
+        GiFHUD.setGifWithImageName("load0.gif")
+        GiFHUD.showWithOverlay()
         
-        
-        // Get all apps installed on the device
-        self.applications = SystemApplicationManager.sharedManager.allInstalledApplications()
-        
-        //拆分数组
-        let obj : PublicOCFunc = PublicOCFunc()
-        //获取views
-        var views = Array<Array<SystemApplication>>()
+        delay(0.5) { 
+         
+            // Get all apps installed on the device
+            self.applications = SystemApplicationManager.sharedManager.allInstalledApplications()
             
-        views = obj.splitArray(self.applications, withSubSize: 20) as! Array<Array<SystemApplication>>
-        
-        
-        for (i,item) in views.enumerated() {
+            //拆分数组
+            let obj : PublicOCFunc = PublicOCFunc()
+            //获取views
+            var views = Array<Array<SystemApplication>>()
             
-            let views = UIView.init(frame: CGRect.init(x:CGFloat(i) * kScreenWidth , y: 0, width: kScreenWidth, height: kScreenHeight))
-            self.scrollerView.addSubview(views)
+            views = obj.splitArray(self.applications, withSubSize: 20) as! Array<Array<SystemApplication>>
             
-            for (i,it) in item.enumerated(){
+            
+            for (i,item) in views.enumerated() {
                 
-                let a = i / 4
+                let views = UIView.init(frame: CGRect.init(x:CGFloat(i) * kScreenWidth , y: 0, width: kScreenWidth, height: kScreenHeight))
+                self.scrollerView.addSubview(views)
                 
-                let b = i % 4
-                
-                
-                
-                let backgroundVH = kScreenWidth / 3.8
-                
-                let backgroundVW = (kScreenWidth - 20) / 4
-                
-                let backgroundV = UIImageView.init(frame: CGRect.init(x: 10 + CGFloat(Float(b)) * backgroundVW, y: 20+(CGFloat(Float(a)) * backgroundVH), width: backgroundVW, height: backgroundVH))
-                
-                let imageW = backgroundV.width-30;
-                
-                let imageV = UIImageView.init(frame: CGRect.init(x: (backgroundV.width - imageW)/2, y: 15, width: imageW, height: imageW))
-                imageV.image = it.icon
-                imageV.isUserInteractionEnabled = true
-                imageV.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tapApp)))
-                backgroundV.addSubview(imageV)
-                
-                let titleLba = UILabel.init(frame: CGRect.init(x: 0, y: imageV.bottom, width: backgroundV.width, height: 20))
-                titleLba.text = it.name
-                titleLba.textAlignment = .center
-                titleLba.font = UIFont.systemFont(ofSize: 11)
-                titleLba.textColor = UIColor.white
-                backgroundV.addSubview(titleLba)
-                
-                backgroundV.isUserInteractionEnabled = true
-                views.addSubview(backgroundV)
-                
-            }
+                for (i,it) in item.enumerated(){
+                    
+                    let a = i / 4
+                    
+                    let b = i % 4
+                    
+                    let backgroundVH = kScreenWidth / 3.8
+                    
+                    let backgroundVW = (kScreenWidth - 20) / 4
+                    
+                    let backgroundV = UIImageView.init(frame: CGRect.init(x: 10 + CGFloat(Float(b)) * backgroundVW, y: 20+(CGFloat(Float(a)) * backgroundVH), width: backgroundVW, height: backgroundVH))
+                    
+                    let imageW = backgroundV.width-30;
+                    
+                    let imageV = UIImageView.init(frame: CGRect.init(x: (backgroundV.width - imageW)/2, y: 15, width: imageW, height: imageW))
+                    imageV.image = it.icon
+                    imageV.isUserInteractionEnabled = true
+                    imageV.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.tapApp)))
+                    backgroundV.addSubview(imageV)
+                    
+                    let titleLba = UILabel.init(frame: CGRect.init(x: 0, y: imageV.bottom, width: backgroundV.width, height: 20))
+                    titleLba.text = it.name
+                    titleLba.textAlignment = .center
+                    titleLba.font = UIFont.systemFont(ofSize: 11)
+                    titleLba.textColor = UIColor.white
+                    backgroundV.addSubview(titleLba)
+                    
+                    backgroundV.isUserInteractionEnabled = true
+                    views.addSubview(backgroundV)
 
+                }
+            }
+            self.scrollerView.contentSize = CGSize.init(width: kScreenWidth * CGFloat(views.count) , height: 0)
+            self.view.addSubview(self.scrollerView)
+            self.page.numberOfPages = views.count
+            self.view.addSubview(self.page)
+
+            GiFHUD.dismiss()
         }
         
-        self.scrollerView.contentSize = CGSize.init(width: kScreenWidth * CGFloat(views.count) , height: 0)
-        
-        self.view.addSubview(self.scrollerView)
-        
-        
-
-        page.numberOfPages = views.count
-        self.view.addSubview(page)
         
         
     }
