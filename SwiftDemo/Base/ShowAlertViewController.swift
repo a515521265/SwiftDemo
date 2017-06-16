@@ -60,8 +60,19 @@ class ShowAlertViewController: BaseViewController {
             
         }
         
-        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didmissVC)))
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didmissVC2)))
         
+    }
+    
+    func didmissVC2(){
+    
+        PublicOCFunc.burstEffect(self.privateImage, andSuperView: self.view, callback: {
+            
+            self.dismiss(animated: true, completion: {
+                
+            })
+            
+        })
         
     }
     

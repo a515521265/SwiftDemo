@@ -41,5 +41,78 @@
     return [arr copy];
 }
 
++(void)burstEffect:(UIView *)view andSuperView:(UIView *)superV callback:(void(^)(void))callback{
+
+    
+    // 先截图
+    UIView *snapView = [view snapshotViewAfterScreenUpdates:YES];
+    
+    // 隐藏容器中的子控件
+    for (UIView *views in view.subviews) {
+        views.hidden = YES;
+    }
+    
+    if ([view isKindOfClass:[UIImageView class]]) {
+
+        ((UIImageView *)view).image = nil;
+        
+    }
+    view.backgroundColor = [[UIColor purpleColor]colorWithAlphaComponent:0];
+    // 保存x坐标的数组
+    NSMutableArray *xArray = [[NSMutableArray alloc] init];
+    // 保存y坐标
+    NSMutableArray *yArray = [[NSMutableArray alloc] init];
+    
+    for (NSInteger i = 0; i < view.bounds.size.width; i = i + 5) {
+        [xArray addObject:@(i)];
+    }
+    for (NSInteger i = 0; i < view.bounds.size.height; i = i + 5) {
+        [yArray addObject:@(i)];
+    }
+    
+    
+    //这个保存所有的碎片
+    NSMutableArray *snapshots = [[NSMutableArray alloc] init];
+    for (NSNumber *x in xArray) {
+        
+        for (NSNumber *y in yArray) {
+            CGRect snapshotRegion = CGRectMake([x doubleValue], [y doubleValue], 5, 5);
+            
+            // resizableSnapshotViewFromRect 这个方法就是根据frame 去截图
+            UIView *snapshot      = [snapView resizableSnapshotViewFromRect:snapshotRegion afterScreenUpdates:NO withCapInsets:UIEdgeInsetsZero];
+            snapshot.frame        = snapshotRegion;
+            [view addSubview:snapshot];
+            [snapshots         addObject:snapshot];
+        }
+    }
+    
+    
+    [UIView animateWithDuration:1
+                          delay:0
+                        options:UIViewAnimationOptionCurveLinear
+                     animations:^{
+                         superV.backgroundColor = [[UIColor blackColor]colorWithAlphaComponent:0.1];
+                         for (UIView *view in snapshots) {
+                             view.frame = CGRectOffset(view.frame, [self randomRange:200 offset:-100], [self randomRange:200 offset:superV.frame.size.height/2]);
+                         }
+                     }
+                     completion:^(BOOL finished) {
+                         for (UIView *view in snapshots) {
+                             [view removeFromSuperview];
+                         }
+                         [view removeFromSuperview];
+                         //                         [self removeFromSuperview];
+//                         [self dismissViewControllerAnimated:YES completion:nil];
+                         callback();
+                
+                     }];
+
+}
+
+
++ (CGFloat)randomRange:(NSInteger)range offset:(NSInteger)offset{
+    
+    return (CGFloat)(arc4random()%range + offset);
+}
 
 @end

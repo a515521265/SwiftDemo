@@ -7,9 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface PublicOCFunc : NSObject
 
 - (NSArray *)splitArray: (NSArray *)array withSubSize : (int)subSize;
+
++(void)burstEffect:(UIView *)view andSuperView:(UIView *)superV callback:(void(^)(void))callback;
 
 @end
