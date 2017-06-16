@@ -18,4 +18,6 @@
 
 + (void)singleTapAction:(UIView *)view callback:(void(^)(void))callback;
 
++ (void)addlongTapEvent:(UIView *)view callback:(void(^)(void))callback;
+
 @end

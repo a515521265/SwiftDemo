@@ -130,7 +130,7 @@
 
     view.userInteractionEnabled = true;
     
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(singleTapAction:)];
+    UITapGestureRecognizer *tap = UITapGestureRecognizer.new;
     
     tap.numberOfTapsRequired = 1;
     
@@ -140,18 +140,20 @@
         callback();
     }]];
     
-    
-    
-    
-    
-;
+}
+
+
++ (void)addlongTapEvent:(UIView *)view callback:(void(^)(void))callback{
+
+    view.userInteractionEnabled = true;
+    UILongPressGestureRecognizer *longPress = UILongPressGestureRecognizer.new;
+    longPress.minimumPressDuration = 1; //定义按的时间
+    longPress.numberOfTouchesRequired = 1;
+    [view addGestureRecognizer:[longPress initWithActionBlock:^(id  _Nonnull sender) {
+        callback();
+    }]];
     
 }
 
-- (void)singleTapAction:(UITapGestureRecognizer *)tap{
-    
-    !self.singleTapEvent ? nil:self.singleTapEvent();
-    
-}
 
 @end
