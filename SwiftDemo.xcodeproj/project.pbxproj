@@ -120,6 +120,7 @@
 		5ED099451EF2331D0067960B /* load0.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5ED099441EF2331D0067960B /* load0.gif */; };
 		5ED099481EF2334B0067960B /* github1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ED099461EF2334B0067960B /* github1.png */; };
 		5ED099491EF2334B0067960B /* github2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ED099471EF2334B0067960B /* github2.png */; };
+		5EE16D261EF3C3EE003477A0 /* UIGestureRecognizer+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE16D251EF3C3EE003477A0 /* UIGestureRecognizer+YYAdd.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -248,6 +249,8 @@
 		5ED099441EF2331D0067960B /* load0.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = load0.gif; sourceTree = "<group>"; };
 		5ED099461EF2334B0067960B /* github1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = github1.png; sourceTree = "<group>"; };
 		5ED099471EF2334B0067960B /* github2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = github2.png; sourceTree = "<group>"; };
+		5EE16D241EF3C3EE003477A0 /* UIGestureRecognizer+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+YYAdd.h"; sourceTree = "<group>"; };
+		5EE16D251EF3C3EE003477A0 /* UIGestureRecognizer+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+YYAdd.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -547,6 +550,8 @@
 				5ED0993B1EF2242A0067960B /* JWLabel.m */,
 				11D218D81EF22C290083C16F /* GiFHUD.h */,
 				11D218D91EF22C290083C16F /* GiFHUD.m */,
+				5EE16D241EF3C3EE003477A0 /* UIGestureRecognizer+YYAdd.h */,
+				5EE16D251EF3C3EE003477A0 /* UIGestureRecognizer+YYAdd.m */,
 			);
 			path = ObjcTools;
 			sourceTree = "<group>";
@@ -744,6 +749,7 @@
 				11D88BCD1EEE77090066EABA /* UIImage+Gif.swift in Sources */,
 				117CB79A1EF0D3DC0044A3C8 /* BaseViewController.swift in Sources */,
 				117CB79C1EF0D3DC0044A3C8 /* MainTabBarViewController.swift in Sources */,
+				5EE16D261EF3C3EE003477A0 /* UIGestureRecognizer+YYAdd.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,6 +13,9 @@
 
 - (NSArray *)splitArray: (NSArray *)array withSubSize : (int)subSize;
 
-+(void)burstEffect:(UIView *)view andSuperView:(UIView *)superV callback:(void(^)(void))callback;
++ (void)burstEffect:(UIView *)view andSuperView:(UIView *)superV callback:(void(^)(void))callback;
+
+
++ (void)singleTapAction:(UIView *)view callback:(void(^)(void))callback;
 
 @end

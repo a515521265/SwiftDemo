@@ -8,6 +8,17 @@
 
 #import "PublicOCFunc.h"
 
+#import "UIGestureRecognizer+YYAdd.h"
+
+@interface PublicOCFunc ()
+
+@property (nonatomic,   copy) dispatch_block_t singleTapEvent;
+
+@property (nonatomic,   copy) dispatch_block_t longTapEvent;
+
+@end
+
+
 @implementation PublicOCFunc
 
 /**
@@ -113,6 +124,34 @@
 + (CGFloat)randomRange:(NSInteger)range offset:(NSInteger)offset{
     
     return (CGFloat)(arc4random()%range + offset);
+}
+
++ (void)singleTapAction:(UIView *)view callback:(void(^)(void))callback{
+
+    view.userInteractionEnabled = true;
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(singleTapAction:)];
+    
+    tap.numberOfTapsRequired = 1;
+    
+    tap.numberOfTouchesRequired = 1;
+    
+    [view addGestureRecognizer:[tap initWithActionBlock:^(id  _Nonnull sender) {
+        callback();
+    }]];
+    
+    
+    
+    
+    
+;
+    
+}
+
+- (void)singleTapAction:(UITapGestureRecognizer *)tap{
+    
+    !self.singleTapEvent ? nil:self.singleTapEvent();
+    
 }
 
 @end

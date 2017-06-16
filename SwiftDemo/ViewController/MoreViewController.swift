@@ -92,7 +92,13 @@ class MoreViewController: BaseViewController ,UIScrollViewDelegate {
                     let imageV = UIImageView.init(frame: CGRect.init(x: (backgroundV.width - imageW)/2, y: 15, width: imageW, height: imageW))
                     imageV.image = it.icon
                     imageV.isUserInteractionEnabled = true
-                    imageV.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.tapApp)))
+                    //各种循环找出view。。。
+//                    imageV.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.tapApp)))
+                    //oc混编实现的点击block。。。
+                    PublicOCFunc.singleTapAction(imageV, callback: {
+                        SystemApplicationManager.sharedManager.openApplication(it)
+                    })
+                    
                     backgroundV.addSubview(imageV)
                     
                     let titleLba = UILabel.init(frame: CGRect.init(x: 0, y: imageV.bottom, width: backgroundV.width, height: 20))
